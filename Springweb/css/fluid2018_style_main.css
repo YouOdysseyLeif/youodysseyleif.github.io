@@ -1,8 +1,28 @@
 @font-face {
     font-family: 'SaintGeorgeStencil';
-    src: url('https://static1.squarespace.com/static/57e2c4ed893fc0209923cd9e/t/57e2df20414fb58d7bc943e2/1474486048741/Butler_Ultra_Light.otfhttps://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75cff403ce64ed2f028a7d/1534447604647/SaintGeorge-LowercaseStencil.otf');
+    src: url('https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75cff403ce64ed2f028a7d/1534447604647/SaintGeorge-LowercaseStencil.otf');
     font-weight: bold;
     font-style: italic;
+}
+
+:root {
+    /* week 1 is green*/
+    --week1-light: #b3dbc8;
+    --week1-dark: #00a98d;
+    /* week 2 is blue*/
+    --week2-light: #8cc8ea;
+    --week2-dark: #167bc0;
+    /* Week 3 is red*/
+    --week3-light: #F49886;
+    --week3-dark: #EE3224;
+    --foo: #B7DCC7;
+    h1 {
+        line-height: 1.2em;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+    }
 }
 
 
@@ -31,7 +51,7 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        text-shadow: 0.1em 0.08em #00AB8E;
+        text-shadow: 0.1em 0.08em var(--week1-dark);
     }
     h3 {
         font-family: futura-pt, sans-serif;
@@ -68,7 +88,7 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        text-shadow: 0.1em 0.08em #167BC0;
+        text-shadow: 0.1em 0.08em var(--week2-dark);
     }
     h3 {
         font-family: futura-pt, sans-serif;
@@ -101,7 +121,7 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        text-shadow: 0.1em 0.08em #EE3224;
+        text-shadow: 0.1em 0.08em var(--week3-dark);
     }
     h3 {
         font-family: futura-pt, sans-serif;
@@ -115,7 +135,7 @@
 
 
 /*#ff2018schedule{
-   background-color: #F49886;
+   background-color: var(week1-light);
 }*/
 
 #collection-5bb3cfdb1905f4dbb4623458,
@@ -166,7 +186,7 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        text-shadow: 0.1em 0.08em #EE3224;
+        text-shadow: 0.1em 0.08em var(--week3-dark);
     }
     h2 {
         font-family: futura-pt, sans-serif;
@@ -192,8 +212,8 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-        text-shadow: 0.1em 0.08em #EE3224;
-        color: #F49886;
+        text-shadow: 0.1em 0.08em var(--week3-dark);
+        color: var(week1-light);
     }
     h2 {
         font-family: futura-pt, sans-serif;
@@ -201,7 +221,7 @@
         font-weight: 600;
         font-size: 30px;
         text-transform: uppercase;
-        color: #EE3224;
+        color: var(--week3-dark);
     }
     h3 {
         font-family: futura-pt, sans-serif;
@@ -209,10 +229,10 @@
         font-weight: 300;
         font-size: 30px;
         text-transform: uppercase;
-        color: #F49886;
+        color: var(--week3-light);
     }
     a {
-        color: #EE3224;
+        color: var(--week3-dark);
     }
 }
 
@@ -309,12 +329,12 @@
 #body-in-space-an-art-party-info {
     a.sqs-block-button-element--small.sqs-block-button-element {
         color: #black !important;
-        border: 5px solid #8CC8EA !important;
-        box-shadow: 10px 5px #167BC0;
-        -webkit-box-shadow: 10px 5px #167BC0;
-        -moz-box-shadow: 10px 5px #167BC0;
-        box-shadow: 10px 5px #167BC0;
-        background-color: #8CC8EA !important;
+        border: 5px solid var(--week2-light) !important;
+        box-shadow: 10px 5px var(--week2-dark);
+        -webkit-box-shadow: 10px 5px var(--week2-dark);
+        -moz-box-shadow: 10px 5px var(--week2-dark);
+        box-shadow: 10px 5px var(--week2-dark);
+        background-color: var(--week2-light) !important;
     }
 }
 
@@ -326,9 +346,9 @@
 #a-fine-kind-of-madness-part-i-info,
 #body-in-space-an-art-party-info {
     a.sqs-block-button-element--small.sqs-block-button-element:hover {
-        color: #167BC0 !important;
-        background-color: #8CC8EA !important;
-        border: 5px solid #167BC0 !important;
+        color: var(--week2-dark) !important;
+        background-color: var(--week2-light) !important;
+        border: 5px solid var(--week2-dark) !important;
         box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -348,12 +368,12 @@
 #block-yui_3_17_2_1_1538603386361_24803 {
     a.sqs-block-button-element--small.sqs-block-button-element {
         color: #black !important;
-        border: 5px solid #F49886 !important;
-        box-shadow: 10px 5px #EE3224;
-        -webkit-box-shadow: 10px 5px #EE3224;
-        -moz-box-shadow: 10px 5px #EE3224;
-        box-shadow: 10px 5px #EE3224;
-        background-color: #F49886 !important;
+        border: 5px solid var(--week3-light) !important;
+        box-shadow: 10px 5px var(--week3-dark);
+        -webkit-box-shadow: 10px 5px var(--week3-dark);
+        -moz-box-shadow: 10px 5px var(--week3-dark);
+        box-shadow: 10px 5px var(--week3-dark);
+        background-color: var(--week3-light) !important;
     }
 }
 
@@ -362,9 +382,9 @@
 #isolated-studies-info,
 #block-yui_3_17_2_1_1538603386361_24803 {
     a.sqs-block-button-element--small.sqs-block-button-element:hover {
-        color: #EE3224 !important;
-        background-color: #F49886 !important;
-        border: 5px solid #EE3224 !important;
+        color: var(--week3-dark) !important;
+        background-color: var(--week3-light) !important;
+        border: 5px solid var(--week3-dark) !important;
         box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
