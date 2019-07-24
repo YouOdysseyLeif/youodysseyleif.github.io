@@ -61,3 +61,55 @@
         }
     }
 }
+
+
+/* ✌️ design ✌️ */
+
+.categories {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.categories a {
+    display: block;
+    flex-grow: 1;
+}
+
+.category {
+    display: flex;
+}
+
+.category label {
+    flex-shrink: 0;
+}
+
+.subCategories-toggle {
+    display: none;
+}
+
+.subCategories {
+    margin-left: 5px;
+    background: #fea;
+}
+
+
+/* ✨ Here is the magic ✨ */
+
+:root {
+    --line_height: 20px;
+}
+
+.categories a {
+    line-height: var(--line_height);
+}
+
+.subCategories-toggle+.subCategories {
+    height: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+
+.subCategories-toggle:checked+.subCategories {
+    max-height: calc(var(--count_categories) * var(--line_height));
+}
