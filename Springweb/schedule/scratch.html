@@ -3,6 +3,17 @@
     <p>Without Media Queries</p>
     <h2>Show me</h2>
     <a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">Leif check it here man</a>
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button> What's happening in
+        <button class="btn" onclick="filterSelection('Week1')"> Week 1</button>
+        <button class="btn" onclick="filterSelection('Week2')"> Week 2</button> Which Venue
+        <button class="btn" onclick="filterSelection('DJD')"> DJD</button>
+        <button class="btn" onclick="filterSelection('cSpace')"> cSpace</button>
+        <button class="btn" onclick="filterSelection('Dickens')"> Dickens Pub</button>
+        <br>
+
+    </div>
     <h2>Sort</h2>
     <div id="sorts" class="button-group"> <button class="button is-checked" data-sort-by="original-order">original
             order</button>
@@ -12,15 +23,15 @@
     </div>
 
     <div class="grid">
-        <div class="grid-item">
+        <div class="grid-item week1 oct15">
             <figure>
                 <img src="https://unsplash.it/250/187?image=400" alt="">
-                <figcaption>Image Title
+                <figcaption>Non-Gender Binary Cabaret
                     <div class="more-info-wrapper">
-                        <div class="name">Event 1</div>
-                        <div class="when">Date 1, 7pm</div>
-                        <div class="venue">DJD</div>
-                        <div class="ticket" href="#">Tickets</div>
+                        <div class="name">Non-Gender Binary Cabaret</div>
+                        <div class="when">Oct 15, 8pm</div>
+                        <div class="venue"> <a href="#">Dickens Pub</a></div>
+                        <a class="ticket" href="#">Tickets</a>
                     </div>
                 </figcaption>
             </figure>
