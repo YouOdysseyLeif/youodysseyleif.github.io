@@ -6,10 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="scratch.css">
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click"),
+                function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                };
+        }
+    </script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <h1>Fluid Fest Schedule</h1>
+        <p>Without Media Queries</p>
+        <h2>Show me</h2>
+        <a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">Leif check it here man</a>
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button> What's happening in
+            <button class="btn" onclick="filterSelection('week1')"> Week 1</button>
+            <button class="btn" onclick="filterSelection('week2')"> Week 2</button> Which Venue
+            <button class="btn" onclick="filterSelection('DJD')"> DJD</button>
+            <button class="btn" onclick="filterSelection('cSpace')"> cSpace</button>
+            <button class="btn" onclick="filterSelection('Dickens')"> Dickens Pub</button>
+            <br>
 
+        </div>
+        <h2>Sort</h2>
+        <div id="sorts" class="button-group"> <button class="button is-checked" data-sort-by="original-order">original
+                order</button>
+            <button class="schedbtn" data-sort-by="name">Name</button>
+            <button class="schedbtn" data-sort-by="date">Date</button>
+            <button class="schedbtn" data-sort-by="venue">Venue</button>
+        </div>
+
+        <div class="grid">
+            <div id="show1" class="filterDiv grid-item week1 oct15 Dickens">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=400" alt="Gender Defiance! Cabaret image">
+                    <figcaption>Gender Defiance! Cabaret
+                        <div class="more-info-wrapper">
+                            <div class="name" hidden="hidden">Gender Defiance! Cabaret</div>
+                            <div class="when">Oct 15, 8pm</div>
+                            <div class="venue"> <a href="#">Dickens Pub</a></div>
+                            <a class="ticket" href="#">Tickets</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="show2" class="filterDiv grid-item week1 oct16 DJD">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=401" alt="">
+                    <figcaption>Image Title
+                        <div class="more-info-wrapper">
+                            <div class="name" hidden="hidden">Event 1</div>
+                            <div class="when">Date 1, 7pm</div>
+                            <div class="venue">DJD</div>
+                            <div class="ticket" href="#">Tickets</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=403" alt="">
+                    <figcaption>Image Title
+                        <div class="more-info-wrapper">
+                            <div class="name" hidden="hidden">Event 1</div>
+                            <div class="when">Date 1, 7pm</div>
+                            <div class="venue">DJD</div>
+                            <div class="ticket" href="#">Tickets</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=404" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=405" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=406" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=407" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=408" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=409" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div class="filterDiv grid-item">
+                <figure>
+                    <img src="https://unsplash.it/250/187?image=411" alt="">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

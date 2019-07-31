@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'SaintGeorgeStencil';
-    src: url('https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75cff403ce64ed2f028a7d/1534447604647/SaintGeorge-LowercaseStencil.otf');
-    font-weight: bold;
-    font-style: italic;
-}
-
 :root {
     /* week 1 is green*/
     --week1-light: #b3dbc8;
@@ -15,14 +8,15 @@
     /* Week 3 is red*/
     --week3-light: #F49886;
     --week3-dark: #EE3224;
-    --foo: #B7DCC7;
+    --nobackground: rgba(0, 0, 0, 0);
+    /*
     h1 {
         line-height: 1.2em;
         font-style: normal;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.09em;
-    }
+    }*/
 }
 
 
@@ -37,11 +31,16 @@
 #high-trails-header,
 #physical-therapy-cabaret-header {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1,
     h2,
     h3 {
+        line-height: 1.2em;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
         color: white;
     }
     h1 {
@@ -74,7 +73,7 @@
 #a-fine-kind-of-madness-part-i-header,
 #body-in-space-an-art-party-header {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1,
     h2,
@@ -107,7 +106,7 @@
 #study-for-anima-darkroom-header,
 #isolated-studies-header {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1,
     h2,
@@ -142,7 +141,7 @@
 #collection-5bb3d035a4222f7f3f7d6234,
 #collection-5bb545e7e4966b8d08ad8645 {
     .Intro--has-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1 {
         font-family: futura-pt-bold, sans-serif;
@@ -177,7 +176,7 @@
 #festiv_banner,
 #festivbanner-1 {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1 {
         font-family: futura-pt-bold, sans-serif;
@@ -239,7 +238,7 @@
 #festabout,
 #collection-5bb54afa652deaac13436486 {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--nobackground);
     }
     h1 {
         font-family: futura-pt-bold, sans-serif;
