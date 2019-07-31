@@ -1,0 +1,37 @@
+var addy=shows[0].childNodes[3].childNodes[1].childNodes[1].childNodes[3] .summary-item-list-container {}
+
+//root of each show
+.summary-item {
+    text-align: center;
+}
+
+.summary-item[data-click-through-url*="ff2018-week1"] //the image container
+.summary-thumbnail-outer-container //the text container
+.summary-content.sqs-gallery-meta-container & div.summary-title {
+    display: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: futura-pt-bold, sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    text-shadow: 0.1em 0.08em #EE3224;
+    color: white;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: none;
+    transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .50s ease-in-out;
+    -webkit-transition: opacity .50s ease-in-out;
+}
+
+.summary-content.sqs-gallery-meta-container>div.summary-metadata-container.summary-metadata-container--above-title .summary-content.sqs-gallery-meta-container>div.summary-metadata-container.summary-metadata-container--below-content
