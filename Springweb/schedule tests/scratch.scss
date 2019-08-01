@@ -1,3 +1,4 @@
+//variables
 *,
 *:before,
 *:after {
@@ -14,9 +15,9 @@
     flex-wrap: wrap;
     justify-content: center;
     &-item {
-        min-width: 250px;
-        max-width: 250px;
-        flex: 1 1 250px;
+        min-width: 200px;
+        max-width: 200px;
+        flex: 1 1 200px;
         padding-left: .5rem;
         padding-right: .5rem;
         margin-bottom: 1rem;
@@ -57,7 +58,8 @@
         figcaption {
             display: block;
             padding: .625rem .5rem;
-            background: lighten(#40424a, 3%);
+            transform: translateY(-1rem);
+            background: rgba(#40424a, 0.8);
         }
     }
 }
@@ -67,7 +69,7 @@
 
 .categories {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .categories a {
