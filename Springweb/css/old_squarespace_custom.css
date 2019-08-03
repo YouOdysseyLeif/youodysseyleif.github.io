@@ -1,0 +1,52 @@
+/* Begin Fluid Fest CSS*/
+
+
+/*Colour Variables*/
+
+:root {
+    /* week 1 is green*/
+    --week1-light: #b3dbc8;
+    --week1-dark: #00a98d;
+    /* week 2 is blue*/
+    --week2-light: #8cc8ea;
+    --week2-dark: #167bc0;
+    /* Week 3 is red*/
+    --week3-light: #F49886;
+    --week3-dark: #EE3224;
+    --nobackground: rgba(0, 0, 0, 0);
+    /*
+    h1 {
+        line-height: 1.2em;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+    }*/
+}
+
+div[id^="ff2019"] {
+    p,
+    a {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 14px;
+    }
+    h1 {
+        font-family: futura-pt, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 0.9em;
+    }
+    h2 {
+        font-family: futura-pt, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    h3 {
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+}

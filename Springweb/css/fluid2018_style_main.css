@@ -340,15 +340,6 @@
         box-shadow: 10px 5px var(--week2-dark);
         background-color: var(--week2-light) !important;
     }
-}
-
-#form-moving-forward-info,
-#jezebel-at-the-still-point-info,
-#kittly-bender-info,
-#reawaken-info,
-#container-info,
-#a-fine-kind-of-madness-part-i-info,
-#body-in-space-an-art-party-info {
     a.sqs-block-button-element--small.sqs-block-button-element:hover {
         color: var(--week2-dark) !important;
         background-color: var(--week2-light) !important;
@@ -362,6 +353,14 @@
         transition: .2s box-shadow ease-in-out;
     }
 }
+
+#form-moving-forward-info,
+#jezebel-at-the-still-point-info,
+#kittly-bender-info,
+#reawaken-info,
+#container-info,
+#a-fine-kind-of-madness-part-i-info,
+#body-in-space-an-art-party-info {}
 
 
 /*Week 3*/
@@ -379,12 +378,6 @@
         box-shadow: 10px 5px var(--week3-dark);
         background-color: var(--week3-light) !important;
     }
-}
-
-#lisbeth-gruwez-dances-bob-dylan-info,
-#study-for-anima-darkroom-info,
-#isolated-studies-info,
-#block-yui_3_17_2_1_1538603386361_24803 {
     a.sqs-block-button-element--small.sqs-block-button-element:hover {
         color: var(--week3-dark) !important;
         background-color: var(--week3-light) !important;

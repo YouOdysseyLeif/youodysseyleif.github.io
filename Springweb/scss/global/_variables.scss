@@ -1,0 +1,104 @@
+// Colour Variables
+$fluid-prime-teal: #00a4a7;
+$fluid-prime-orange: #e17828;
+$fluid-secondary-light: #fdcb96;
+$fluid-secondary-dark: #e88426;
+// palette
+$transparent: rgba(255, 255, 255, 0);
+$trans-orange: rgba($fluid-prime-orange, 0);
+$white: #ffffff;
+$charcoal: #404040;
+$gray: #909090;
+$light-gray: #bababa;
+$nobackground: rgba(0, 0, 0, 0);
+$dark-red: #550c00;
+// semantic
+$c-body: $charcoal;
+$c-body-background: $white;
+$c-button: $fluid-prime-orange;
+$c-button-cancel: $gray;
+$c-button-hover: $fluid-secondary-light;
+$c-button-text: $white;
+$c-error: $dark-red;
+$c-link: $fluid-secondary-light;
+$c-link-hover: $fluid-prime-orange;
+$c-modal: $trans-orange;
+$c-menu: $fluid-prime-orange;
+$c-menu-sub: $fluid-secondary-light;
+$c-menu-text: $white;
+$c-rule: $light-gray;
+$c-thermo-bar: $fluid-secondary-light;
+// SIZES
+// breakpoints
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+// definitions
+$basetext: 1em;
+$baseline: 1rem;
+$hairline: $baseline / 16;
+$eighth: $baseline / 8;
+$quarter: $baseline / 4;
+$half: $baseline / 2;
+$double: $baseline * 2;
+$quad: $baseline * 4;
+// semantic
+$s-border-radius: $half;
+$s-button-x: $baseline;
+$s-button-y: $half;
+$s-column: $phone;
+$s-column-gap: $double;
+$s-column-gap-tight: $baseline * 5 / 4;
+$s-field: $baseline * 12;
+$s-field-x: $half;
+$s-field-y: $quarter;
+$s-label: $quarter;
+$s-link-underline: $eighth;
+$s-menu: $quarter;
+$s-menu-x: $baseline;
+$s-menu-y: $half;
+$s-spacing: $baseline * 5 / 4;
+// TYPOGRAPHY 
+// fonts
+@font-face {
+    font-family: futura-bt-medium;
+    src: local("futura-md-bt-medium"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610aa82811800015283f7/1564872874239/futura-md-bt-medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-bt-bold;
+    src: local("futura-bold-bt"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610be8281180001528518/1564872894875/futura-bold-bt.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-bt-heavy;
+    src: local("futura-hv-bt-heavy.ttf"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610c66069a60001f0d438/1564872902647/futura-hv-bt-heavy.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-body: (futura-bt-medium, futura-pt, sans-serif);
+$font-bold: (futura-bt-bold, sans-serif);
+$font-heavy: (futura-bt-heavy, sans-serif);
+// sizing
+$t-small: $basetext * 4 / 5;
+$t-normal: $basetext;
+$t-large: $basetext * 1.3;
+$t-larger: $basetext * 2;
+$t-largest: $basetext * 2.5;
+// leading
+$leading: $basetext * 1.4;
+$leading-header: $double;
+$leading-tight: $basetext * 0.9;
+// weight
+$f-bold: 800;
+$f-medium: 500;
+$f-heavy: 700;
+// tracking
+$tracknormal: 75;
+// transitions 
+$transition-color: color 300ms;

@@ -423,7 +423,7 @@
 
 #chottoheader {
     .Index-page-image:before {
-        background-color: rgba(0, 0, 0, 10);
+        background-color: rgba(0, 0, 0, 0);
     }
     h1 {
         font-family: 'Arvo2';
@@ -478,14 +478,14 @@
 
 @font-face {
     font-family: 'SaintGeorgeStencil';
-    src: url('https://static1.squarespace.com/static/57e2c4ed893fc0209923cd9e/t/57e2df20414fb58d7bc943e2/1474486048741/Butler_Ultra_Light.otfhttps://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75cff403ce64ed2f028a7d/1534447604647/SaintGeorge-LowercaseStencil.otf');
+    src: url('https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75cff403ce64ed2f028a7d/1534447604647/SaintGeorge-LowercaseStencil.otf');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Arvo2';
-    src: url('https://static1.squarespace.com/static/57e2c4ed893fc0209923cd9e/t/57e2df20414fb58d7bc943e2/1474486048741/Butler_Ultra_Light.otfhttps://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75d87c0ebbe88698c54699/1534449788137/Arvo-Regular.ttf');
+    src: url('https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5b75d87c0ebbe88698c54699/1534449788137/Arvo-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
