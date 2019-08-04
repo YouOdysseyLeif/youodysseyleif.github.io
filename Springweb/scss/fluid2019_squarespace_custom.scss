@@ -94,7 +94,8 @@
             color: $c-link-hover;
             transition: $transition-color;
         }
-        &.sqs-block-button-element--small.sqs-block-button-element {
+        &.sqs-block-button-element--small.sqs-block-button-element,
+        .sqs-editable-button {
             //todo 
             background: $c-button;
             color: $c-button-text;
@@ -129,8 +130,16 @@
     }
 }
 
-#festivbanner-1 {
-    @extend %fluidfeststyle;
+@media screen and (max-width: $tablet) {
+    #ff2019-festivbanner-1 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    #ff2019-mobile-banner {
+        display: none !important;
+    }
 }
 
 [id^="ff2019"] {

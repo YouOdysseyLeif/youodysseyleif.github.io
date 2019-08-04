@@ -33,11 +33,11 @@
 }
 
 /* general */
-#festivbanner-1 .Index-page-image:before, [id^="ff2019"] .Index-page-image:before {
+[id^="ff2019"] .Index-page-image:before {
   background-color: var(--nobackground);
 }
 
-#festivbanner-1 *, [id^="ff2019"] * {
+[id^="ff2019"] * {
   font-family: futura-bt-medium, futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -45,7 +45,7 @@
   letter-spacing: 0.075em;
 }
 
-#festivbanner-1 h1, [id^="ff2019"] h1 {
+[id^="ff2019"] h1 {
   font-family: futura-bt-heavy, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -57,7 +57,7 @@
   letter-spacing: normal;
 }
 
-#festivbanner-1 h2, [id^="ff2019"] h2 {
+[id^="ff2019"] h2 {
   font-family: futura-bt-bold, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -66,7 +66,7 @@
   font-size: 2em;
 }
 
-#festivbanner-1 h3, [id^="ff2019"] h3 {
+[id^="ff2019"] h3 {
   font-family: futura-bt-heavy, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -79,8 +79,7 @@
   letter-spacing: normal;
 }
 
-#festivbanner-1 strong, [id^="ff2019"] strong,
-#festivbanner-1 b,
+[id^="ff2019"] strong,
 [id^="ff2019"] b {
   font-family: futura-bt-bold, sans-serif;
   font-weight: normal;
@@ -88,18 +87,19 @@
   font-size: 1em;
 }
 
-#festivbanner-1 a, [id^="ff2019"] a {
+[id^="ff2019"] a {
   text-decoration: none;
   color: #fdcb96;
 }
 
-#festivbanner-1 a:hover, [id^="ff2019"] a:hover {
+[id^="ff2019"] a:hover {
   color: #e17828;
   -webkit-transition: color 300ms;
   transition: color 300ms;
 }
 
-#festivbanner-1 a.sqs-block-button-element--small.sqs-block-button-element, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element {
+[id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element,
+[id^="ff2019"] a .sqs-editable-button {
   background: #e17828;
   color: #ffffff;
   display: inline-block;
@@ -115,7 +115,10 @@
   transition-property: color, background-color;
 }
 
-#festivbanner-1 a.sqs-block-button-element--small.sqs-block-button-element:hover, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:hover, #festivbanner-1 a.sqs-block-button-element--small.sqs-block-button-element:focus, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:focus, #festivbanner-1 a.sqs-block-button-element--small.sqs-block-button-element:active, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:active {
+[id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:hover, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:focus, [id^="ff2019"] a.sqs-block-button-element--small.sqs-block-button-element:active,
+[id^="ff2019"] a .sqs-editable-button:hover,
+[id^="ff2019"] a .sqs-editable-button:focus,
+[id^="ff2019"] a .sqs-editable-button:active {
   -webkit-animation-name: hvr-back-pulse;
   animation-name: hvr-back-pulse;
   -webkit-animation-duration: 1s;
@@ -128,6 +131,18 @@
   animation-iteration-count: infinite;
   background-color: #fdcb96;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #ff2019-festivbanner-1 {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #ff2019-mobile-banner {
+    display: none !important;
+  }
 }
 
 [id^="ff2019"] {
