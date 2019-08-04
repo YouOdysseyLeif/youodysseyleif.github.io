@@ -13,7 +13,7 @@
     "**/.vscode": true
   },
   "auto-close-tag.fullMode": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
