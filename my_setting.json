@@ -1,0 +1,33 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "sync.gist": "ad958cb3250d7da6585c2b8b9c2dc43b",
+  "git.enableSmartCommit": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Oceanic Plus",
+  "editor.fontSize": 13,
+  "vetur.format.options.tabSize": 5,
+  "editor.minimap.enabled": false,
+  "files.exclude": {
+    "**/.vscode": true
+  },
+  "auto-close-tag.fullMode": true,
+  "editor.tabSize": 2,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "beautify.language": {
+    "html": ["html", "php", "erb"],
+    "css": [],
+    "js": []
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
