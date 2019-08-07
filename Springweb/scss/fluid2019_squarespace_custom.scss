@@ -1,154 +1,208 @@
 /* Begin Fluid Fest CSS*/
 
-// mixins 
+// mixins
 // Convert illustrator, indesign and photoshop tracking into letter spacing.
 @function tracking($target) {
-    @return ($target / 1000) * 1em;
+  @return ($target / 1000) * 1em;
 }
 
 @mixin tracking($target) {
-    letter-spacing: tracking($target);
+  letter-spacing: tracking($target);
 }
 
 // might be able to use truncate for the "D" in fluid this year
 @mixin truncate($truncation-boundary) {
-    max-width: $truncation-boundary;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
-    content: $content;
-    display: $display;
-    position: $pos;
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+} //Usage: @include transition(all, 0.2s, ease-in-out);
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
 }
 
 @import "global/variables";
+
 @-webkit-keyframes hvr-back-pulse {
-    50% {
-        background-color: rgba($c-button-hover, 0.75);
-    }
+  50% {
+    background-color: rgba($c-button-hover, 0.75);
+  }
 }
 
 @keyframes hvr-back-pulse {
-    50% {
-        background-color: rgba($c-button-hover, 0.75);
-    }
+  50% {
+    background-color: rgba($c-button-hover, 0.75);
+  }
 }
-
 
 /* general */
 
 %fluidfeststyle {
-    .Index-page-image:before {
-        background-color: var(--nobackground);
+  .Index-page-image:before {
+    background-color: var(--nobackground);
+  }
+  * {
+    font-family: $font-body;
+    font-weight: $f-medium;
+    font-style: normal;
+    font-size: $basetext;
+    @include tracking($tracknormal);
+  }
+  h1 {
+    font-family: $font-heavy;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $t-largest;
+    line-height: $leading-tight;
+    text-transform: uppercase;
+    font-kerning: auto;
+    letter-spacing: normal;
+  }
+  h2 {
+    font-family: $font-bold;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $charcoal;
+    font-size: $t-larger;
+  }
+  h3 {
+    font-family: $font-heavy;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $charcoal;
+    font-size: $t-large;
+    text-transform: uppercase;
+    font-kerning: auto;
+    letter-spacing: normal;
+  }
+  strong,
+  b {
+    font-family: $font-bold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $basetext;
+  }
+  a {
+    text-decoration: none;
+    color: $c-link;
+    &:hover {
+      color: $c-link-hover;
+      transition: $transition-color;
     }
-    * {
-        font-family: $font-body;
-        font-weight: $f-medium;
-        font-style: normal;
-        font-size: $basetext;
-        @include tracking($tracknormal);
+    &.sqs-block-button-element--small.sqs-block-button-element,
+    .sqs-editable-button {
+      //todo
+      background: $c-button;
+      color: $c-button-text;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      overflow: hidden;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color;
+      &:hover,
+      &:focus,
+      &:active {
+        //todo
+        -webkit-animation-name: hvr-back-pulse;
+        animation-name: hvr-back-pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        background-color: $c-button-hover;
+        color: white;
+      }
     }
-    h1 {
-        font-family: $font-heavy;
-        font-weight: normal;
-        font-style: normal;
-        font-size: $t-largest;
-        line-height: $leading-tight;
-        text-transform: uppercase;
-        font-kerning: auto;
-        letter-spacing: normal;
-    }
-    h2 {
-        font-family: $font-bold;
-        font-weight: normal;
-        font-style: normal;
-        text-transform: uppercase;
-        color: $charcoal;
-        font-size: $t-larger;
-    }
-    h3 {
-        font-family: $font-heavy;
-        font-weight: normal;
-        font-style: normal;
-        text-transform: uppercase;
-        color: $charcoal;
-        font-size: $t-large;
-        text-transform: uppercase;
-        font-kerning: auto;
-        letter-spacing: normal;
-    }
-    strong,
-    b {
-        font-family: $font-bold;
-        font-weight: normal;
-        font-style: normal;
-        font-size: $basetext;
-    }
-    a {
-        text-decoration: none;
-        color: $c-link;
-        &:hover {
-            color: $c-link-hover;
-            transition: $transition-color;
-        }
-        &.sqs-block-button-element--small.sqs-block-button-element,
-        .sqs-editable-button {
-            //todo 
-            background: $c-button;
-            color: $c-button-text;
-            display: inline-block;
-            vertical-align: middle;
-            -webkit-transform: perspective(1px) translateZ(0);
-            transform: perspective(1px) translateZ(0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            overflow: hidden;
-            -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-            -webkit-transition-property: color, background-color;
-            transition-property: color, background-color;
-            &:hover,
-            &:focus,
-            &:active {
-                //todo
-                -webkit-animation-name: hvr-back-pulse;
-                animation-name: hvr-back-pulse;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-delay: 0.5s;
-                animation-delay: 0.5s;
-                -webkit-animation-timing-function: linear;
-                animation-timing-function: linear;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-                background-color: $c-button-hover;
-                color: white;
-            }
-        }
-    }
+  }
 }
-
+//hide verticle image on desktop
+@media screen and (min-width: $tablet + 1) {
+  #block-yui_3_17_2_1_1565153504851_4966 {
+    display: none !important;
+  }
+}
+#block-yui_3_17_2_1_1565151748785_4336 {
+  right: 0px;
+  bottom: 0px;
+  //hide horizontal image on mobile
+  @media screen and (max-width: $tablet) {
+    display: none !important; //hide horizontal image on mobile
+  }
+}
+/*hide horizontal image on mobile
 @media screen and (max-width: $tablet) {
-    #ff2019-festivbanner-1 {
-        display: none !important;
-    }
+  #block-yui_3_17_2_1_1565151748785_4336 {
+    display: none !important;
+  }
 }
-
-@media screen and (min-width: $tablet) {
-    #ff2019-mobile-banner {
-        display: none !important;
-    }
-}
+*/
 
 [id^="ff2019"] {
-    @extend %fluidfeststyle;
-    background-color: $white;
+  @extend %fluidfeststyle;
+  background-color: $white;
+}
+
+#ff2019-festivbanner-1 {
+  background-color: #44a2a8;
 }
 
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
-    
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    tran
 }
 
 /* End Fluid 2019 css */

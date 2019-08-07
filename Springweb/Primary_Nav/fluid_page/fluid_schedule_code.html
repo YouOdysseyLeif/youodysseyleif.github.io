@@ -9,10 +9,10 @@
     <script>
         $(document).ready(function() {
 
-            $('ul.tabs li').click(function() {
+            $('ul.week li').click(function() {
                 var tab_id = $(this).attr('data-tab');
 
-                $('ul.tabs li').removeClass('current');
+                $('ul.week li').removeClass('current');
                 $('.tab-content').removeClass('current');
 
                 $(this).addClass('current');
@@ -22,18 +22,18 @@
         })
     </script>
     <style>
-        .container {
+        .sched-container {
             width: 100%;
             margin: 0 auto;
         }
         
-        ul.tabs {
+        ul.week {
             margin: 0px;
             padding: 2px;
             display: flex;
         }
         
-        ul.tabs li {
+        ul.week li {
             background: #F49886;
             color: #222;
             display: inline-block;
@@ -44,7 +44,7 @@
             min-height: 55px;
         }
         
-        ul.tabs li.current {
+        ul.week li.current {
             background-color: #F49886 !important;
             box-shadow: 0px -5px #EE3224 inset;
             color: #ffffff;
@@ -70,11 +70,11 @@
         }
         
         @media screen and (max-width: 768px) {
-            ul.tabs li {
+            ul.week li {
                 padding: 10px 30px;
                 min-width: 45px;
             }
-            ul.tabs li.current {
+            ul.week li.current {
                 padding: 10px 30px;
                 box-shadow: 0px -5px #EE3224 inset;
             }
@@ -85,11 +85,11 @@
         }
         
         @media screen and (max-width: 650px) {
-            ul.tabs li {
+            ul.week li {
                 padding: 5px 6px;
                 font-weight: normal;
             }
-            ul.tabs li.current {
+            ul.week li.current {
                 padding: 5px 6px;
                 box-shadow: 0px -5px #EE3224 inset;
                 font-weight: normal;
@@ -104,28 +104,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <ul class="tabs">
+    <div class="sched-container">
+        <ul class="week">
             <li class="tab-empty" data-tab="tab-1">&nbsp;<br>&nbsp;</li>
             <li class="tab-empty" data-tab="tab-2">OCT<br>&nbsp;</li>
             <li class="tab-link current" data-tab="tab-3">Thu<br>18</li>
             <li class="tab-link" data-tab="tab-4">Fri<br>19</li>
             <li class="tab-link" data-tab="tab-5">Sat<br>20</li>
         </ul>
-        <ul class="tabs">
+        <ul class="week">
             <li class="tab-link" data-tab="tab-6">Tue<br>23</li>
             <li class="tab-link" data-tab="tab-7">Wed<br>24</li>
             <li class="tab-link" data-tab="tab-8">Thu<br>25</li>
             <li class="tab-link" data-tab="tab-9">Fri<br>26</li>
             <li class="tab-link" data-tab="tab-10">Sat<br>27</li>
-        </ul>
-
-        <ul class="tabs">
-            <li class="tab-empty" data-tab="tab-11">&nbsp;<br>&nbsp;</li>
-            <li class="tab-empty" data-tab="tab-12">NOV<br>&nbsp;</li>
-            <li class="tab-link" data-tab="tab-13">Thu<br>1</li>
-            <li class="tab-link" data-tab="tab-14">Fri<br>2</li>
-            <li class="tab-link" data-tab="tab-15">Sat<br>3</li>
         </ul>
         <div id="tab-3" class="tab-content current">
             <a href="https://springboardperformance.thundertix.com/events/136261"><b>7PM | Kickstart | CanAsian

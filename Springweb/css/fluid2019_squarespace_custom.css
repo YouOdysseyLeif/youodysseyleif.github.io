@@ -133,21 +133,41 @@
   color: white;
 }
 
+@media screen and (min-width: 769px) {
+  #block-yui_3_17_2_1_1565153504851_4966 {
+    display: none !important;
+  }
+}
+
+#block-yui_3_17_2_1_1565151748785_4336 {
+  right: 0px;
+  bottom: 0px;
+}
+
 @media screen and (max-width: 768px) {
-  #ff2019-festivbanner-1 {
+  #block-yui_3_17_2_1_1565151748785_4336 {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 768px) {
-  #ff2019-mobile-banner {
+/*hide horizontal image on mobile
+@media screen and (max-width: $tablet) {
+  #block-yui_3_17_2_1_1565151748785_4336 {
     display: none !important;
   }
 }
-
+*/
 [id^="ff2019"] {
   background-color: #ffffff;
 }
 
+#ff2019-festivbanner-1 {
+  background-color: #44a2a8;
+}
+
+/*
+.summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
+}
+*/
 /* End Fluid 2019 css */
 /*# sourceMappingURL=fluid2019_squarespace_custom.css.map */
