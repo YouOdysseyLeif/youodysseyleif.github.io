@@ -32,11 +32,11 @@
   transition: $transition-property $transition-time $method;
 } //Usage: @include transition(all, 0.2s, ease-in-out);
 
-@function black($opacity){
-    @return rgba(0,0,0,$opacity)
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity);
 }
-@function white($opacity){
-    @return rgba(255,255,255,$opacity)
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity);
 }
 
 @mixin keyframes($animation-name) {
@@ -45,13 +45,13 @@
   }
   @-moz-keyframes $animation-name {
     @content;
-  }  
+  }
   @-ms-keyframes $animation-name {
     @content;
   }
   @-o-keyframes $animation-name {
     @content;
-  }  
+  }
   @keyframes $animation-name {
     @content;
   }
@@ -83,13 +83,6 @@
 %fluidfeststyle {
   .Index-page-image:before {
     background-color: var(--nobackground);
-  }
-  * {
-    font-family: $font-body;
-    font-weight: $f-medium;
-    font-style: normal;
-    font-size: $basetext;
-    @include tracking($tracknormal);
   }
   h1 {
     font-family: $font-heavy;
@@ -169,27 +162,6 @@
     }
   }
 }
-//hide verticle image on desktop
-@media screen and (min-width: $tablet + 1) {
-  #block-yui_3_17_2_1_1565153504851_4966 {
-    display: none !important;
-  }
-}
-#block-yui_3_17_2_1_1565151748785_4336 {
-  right: 0px;
-  bottom: 0px;
-  //hide horizontal image on mobile
-  @media screen and (max-width: $tablet) {
-    display: none !important; //hide horizontal image on mobile
-  }
-}
-/*hide horizontal image on mobile
-@media screen and (max-width: $tablet) {
-  #block-yui_3_17_2_1_1565151748785_4336 {
-    display: none !important;
-  }
-}
-*/
 
 [id^="ff2019"] {
   @extend %fluidfeststyle;
@@ -197,12 +169,27 @@
 }
 
 #ff2019-festivbanner-1 {
-  background-color: #44a2a8;
+  background-color: $fluid-prime-teal;
+  & figure.Index-page-image.loaded {
+    max-width: 1080px;
+    @media screen and (max-width: $tablet) {
+      //hide horizontal image on mobile
+      display: none !important;
+    }
+  }
+
+  //hide verticle image on desktop
+  @media screen and (min-width: $tablet + 1) {
+    #block-yui_3_17_2_1_1565153504851_4966 {
+      display: none !important;
+    }
+  }
 }
 
+/*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
     tran
 }
-
+*/
 /* End Fluid 2019 css */

@@ -133,40 +133,34 @@
   color: white;
 }
 
-@media screen and (min-width: 769px) {
-  #block-yui_3_17_2_1_1565153504851_4966 {
-    display: none !important;
-  }
-}
-
-#block-yui_3_17_2_1_1565151748785_4336 {
-  right: 0px;
-  bottom: 0px;
-}
-
-@media screen and (max-width: 768px) {
-  #block-yui_3_17_2_1_1565151748785_4336 {
-    display: none !important;
-  }
-}
-
-/*hide horizontal image on mobile
-@media screen and (max-width: $tablet) {
-  #block-yui_3_17_2_1_1565151748785_4336 {
-    display: none !important;
-  }
-}
-*/
 [id^="ff2019"] {
   background-color: #ffffff;
 }
 
 #ff2019-festivbanner-1 {
-  background-color: #44a2a8;
+  background-color: #00a4a7;
+}
+
+#ff2019-festivbanner-1 figure.Index-page-image.loaded {
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 768px) {
+  #ff2019-festivbanner-1 figure.Index-page-image.loaded {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #ff2019-festivbanner-1 #block-yui_3_17_2_1_1565153504851_4966 {
+    display: none !important;
+  }
 }
 
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    tran
 }
 */
 /* End Fluid 2019 css */
