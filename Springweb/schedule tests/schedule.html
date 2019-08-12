@@ -1,183 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="scratch.css">
-    <script src="scratch.js"></script>
-</head>
+    <link rel="stylesheet" href="scratch.css" />
+    <!-- <script src="scratch.js"></script>-->
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <h1>Fluid Fest Schedule</h1>
-        <p>Without Media Queries</p>
-        <h2>Show me</h2>
-        <a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">Leif check it here man</a>
-        <div class="categories">
-            <!-- Control buttons -->
-            <div id="myBtnContainer">
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn active" onclick="filterSelection('all')"> Show all</button> What's happening in
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn" onclick="filterSelection('week1')"> Week 1</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn" onclick="filterSelection('week2')"> Week 2</button> Which Venue
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn" onclick="filterSelection('DJD')"> DJD</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn" onclick="filterSelection('cSpace')"> cSpace</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element btn" onclick="filterSelection('Dickens')"> Dickens Pub</button>
-                <br>
-
-            </div>
-            <h2>Sort</h2>
-            <div id="sorts" class="button-group"> <button class="sqs-block-button-element--small.sqs-block-button-element button is-checked" data-sort-by="original-order">original
-                    order</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element schedbtn" data-sort-by="name">Name</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element schedbtn" data-sort-by="date">Date</button>
-                <button class="sqs-block-button-element--small.sqs-block-button-element schedbtn" data-sort-by="venue">Venue</button>
-            </div>
+      <h1>Fluid Fest Schedule</h1>
+      <p>Without Media Queries</p>
+      <h2>Show me</h2>
+      <a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp"
+        >Leif check it here man</a
+      >
+      <div class="categories">
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn active"
+            onclick="filterSelection('all')"
+          >
+            Show all
+          </button>
+          What's happening in
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn"
+            onclick="filterSelection('week1')"
+          >
+            Week 1
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn"
+            onclick="filterSelection('week2')"
+          >
+            Week 2
+          </button>
+          Which Venue
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn"
+            onclick="filterSelection('DJD')"
+          >
+            DJD
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn"
+            onclick="filterSelection('cSpace')"
+          >
+            cSpace
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element btn"
+            onclick="filterSelection('Dickens')"
+          >
+            Dickens Pub
+          </button>
+          <br />
         </div>
-        <div class="grid">
-            <!--Week 1-->
-            <div id="show1" class="filterDiv grid-item week1 oct15 show1 Dickens">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=400" alt="Gender Defiance! Cabaret image">
-                    <figcaption>Gender Defiance! Cabaret
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">Gender Defiance! Cabaret</div>
-                            <div class="when">Oct 15, 8pm</div>
-                            <div class="venue"> Dickens Pub</div>
-                            <a class="ticket" href="#show1">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="show2-1" class="filterDiv grid-item week1 oct16 oct 17 show2 DJD">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=401" alt="">
-                    <figcaption>The Beauty of Falling Apart
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">The Beauty of Falling Apart</div>
-                            <div class="when">Oct 16 & 17, 8pm</div>
-                            <div class="venue">DJD</div>
-                            <a class="ticket" href="#show2">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="show2-2" class="filterDiv grid-item week1 oct16 oct 17 DJD">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=401" alt="">
-                    <figcaption>The Other Half
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">The Other Half</div>
-                            <div class="when">Oct 16 & 17, 8pm</div>
-                            <div class="venue">DJD</div>
-                            <a class="ticket" href="#show2">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="show3-1" class="filterDiv grid-item week1 oct18 oct19 show3 cSpace">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=403" alt="">
-                    <figcaption>Red Rover Tour: I AM A GENIUS does anyone here know me?
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">Red Rover Tour: I AM A GENIUS does anyone here know me?
-                            </div>
-                            <div class="when">Oct 18, 7:30pm<br />Oct 19, 7:30pm</div>
-                            <div class="venue">cSpace</div>
-                            <a class="ticket" href="#show3">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div id="show3-2" class="filterDiv grid-item week1 oct18 oct19 show3 cSpace">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=403" alt="">
-                    <figcaption>Road Trip
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">Road Trip</div>
-                            <div class="when">Oct 18, 7:30pm<br />Oct 19, 7:30pm</div>
-                            <div class="venue">cSpace</div>
-                            <a class="ticket" href="#show3">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item week1 oct18 show4 DJD">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=403" alt="">
-                    <figcaption>HINKYPUNK
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">HINKYPUNK</div>
-                            <div class="when">Oct 18, 8pm</div>
-                            <div class="venue">DJD</div>
-                            <a class="ticket" href="#show4">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item week1 oct18 show5 Dickens">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=403" alt="">
-                    <figcaption>Vogue Ball
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">Vogue Ball</div>
-                            <div class="when">Oct 18, 9:30pm</div>
-                            <div class="venue">Dickens Pub</div>
-                            <a class="ticket" href="#show5">Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item week1 oct19 show6">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=406" alt="">
-                    <figcaption>To Name An Other
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">To Name An Other</div>
-                            <div class="when">Oct 19, 3:00pm</div>
-                            <div class="venue">Atlantic Avenue Art Block</div>
-                            <span class="ticket">FREE</span>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=407" alt="">
-                    <figcaption>Split
-                        <div class="more-info-wrapper">
-                            <div class="name" hidden="hidden">Split</div>
-                            <div class="when">Oct 19, 8:00pm</div>
-                            <div class="venue">DJD</div>
-                            <a class="ticket" href=#show7>Tickets</a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=408" alt="">
-                    <figcaption>Image Title</figcaption>
-                </figure>
-            </div>
-
-            <!--Week 2-->
-            <div class="filterDiv grid-item">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=409" alt="">
-                    <figcaption>Image Title</figcaption>
-                </figure>
-            </div>
-            <div class="filterDiv grid-item">
-                <figure>
-                    <img src="https://unsplash.it/250/187?image=411" alt="">
-                    <figcaption>Image Title</figcaption>
-                </figure>
-            </div>
+        <h2>Sort</h2>
+        <div id="sorts" class="button-group">
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element button is-checked"
+            data-sort-by="original-order"
+          >
+            original order
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element schedbtn"
+            data-sort-by="name"
+          >
+            Name
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element schedbtn"
+            data-sort-by="date"
+          >
+            Date
+          </button>
+          <button
+            class="sqs-block-button-element--small.sqs-block-button-element schedbtn"
+            data-sort-by="venue"
+          >
+            Venue
+          </button>
         </div>
+      </div>
+      <div class="grid">
+        <!--Week 1-->
+        <div id="show1" class="filterDiv grid-item week1 oct15 show1 Dickens">
+          <figure>
+            <img
+              src="https://unsplash.it/250/187?image=400"
+              alt="Gender Defiance! Cabaret image"
+            />
+            <figcaption>
+              Gender Defiance! Cabaret
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">Gender Defiance! Cabaret</div>
+                <div class="when">Oct 15, 8pm</div>
+                <div class="venue">Dickens Pub</div>
+                <a class="ticket" href="#show1">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          id="show2-1"
+          class="filterDiv grid-item week1 oct16 oct17 show2 DJD"
+        >
+          <figure>
+            <img src="https://unsplash.it/250/187?image=401" alt="" />
+            <figcaption>
+              The Beauty of Falling Apart
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">
+                  The Beauty of Falling Apart
+                </div>
+                <div class="when">Oct 16 & 17, 8pm</div>
+                <div class="venue">DJD</div>
+                <a class="ticket" href="#show2">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          id="show2-2"
+          class="filterDiv grid-item week1 oct16 oct17 show2 DJD"
+        >
+          <figure>
+            <img src="https://unsplash.it/250/187?image=401" alt="" />
+            <figcaption>
+              The Other Half
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">The Other Half</div>
+                <div class="when">Oct 16 & 17, 8pm</div>
+                <div class="venue">DJD</div>
+                <a class="ticket" href="#show2">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          id="show3-1"
+          class="filterDiv grid-item week1 oct18 oct19 show3 cSpace"
+        >
+          <figure>
+            <img src="https://unsplash.it/250/187?image=403" alt="" />
+            <figcaption>
+              Red Rover Tour: I AM A GENIUS does anyone here know me?
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">
+                  Red Rover Tour: I AM A GENIUS does anyone here know me?
+                </div>
+                <div class="when">Oct 18, 7:30pm<br />Oct 19, 7:30pm</div>
+                <div class="venue">cSpace</div>
+                <a class="ticket" href="#show3">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          id="show3-2"
+          class="filterDiv grid-item week1 oct18 oct19 show3 cSpace"
+        >
+          <figure>
+            <img src="https://unsplash.it/250/187?image=403" alt="" />
+            <figcaption>
+              Road Trip
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">Road Trip</div>
+                <div class="when">Oct 18, 7:30pm<br />Oct 19, 7:30pm</div>
+                <div class="venue">cSpace</div>
+                <a class="ticket" href="#show3">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item week1 oct18 show4 DJD">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=403" alt="" />
+            <figcaption>
+              HINKYPUNK
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">HINKYPUNK</div>
+                <div class="when">Oct 18, 8pm</div>
+                <div class="venue">DJD</div>
+                <a class="ticket" href="#show4">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item week1 oct18 show5 Dickens">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=403" alt="" />
+            <figcaption>
+              Vogue Ball
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">Vogue Ball</div>
+                <div class="when">Oct 18, 9:30pm</div>
+                <div class="venue">Dickens Pub</div>
+                <a class="ticket" href="#show5">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item week1 oct19 show6">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=406" alt="" />
+            <figcaption>
+              To Name An Other
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">To Name An Other</div>
+                <div class="when">Oct 19, 3:00pm</div>
+                <div class="venue">Atlantic Avenue Art Block</div>
+                <span class="ticket">FREE</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=407" alt="" />
+            <figcaption>
+              Split
+              <div class="more-info-wrapper">
+                <div class="name" hidden="hidden">Split</div>
+                <div class="when">Oct 19, 8:00pm</div>
+                <div class="venue">DJD</div>
+                <a class="ticket" href="#show7">Tickets</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=408" alt="" />
+            <figcaption>Image Title</figcaption>
+          </figure>
+        </div>
+
+        <!--Week 2-->
+        <div class="filterDiv grid-item">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=409" alt="" />
+            <figcaption>Image Title</figcaption>
+          </figure>
+        </div>
+        <div class="filterDiv grid-item">
+          <figure>
+            <img src="https://unsplash.it/250/187?image=411" alt="" />
+            <figcaption>Image Title</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

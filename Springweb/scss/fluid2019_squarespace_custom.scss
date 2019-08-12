@@ -66,23 +66,26 @@
 
 @import "global/variables";
 
-@-webkit-keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba($c-button-hover, 0.75);
-  }
-}
-
-@keyframes hvr-back-pulse {
-  50% {
-    background-color: rgba($c-button-hover, 0.75);
-  }
-}
-
 /* general */
+%headerfonts {
+}
 
 %fluidfeststyle {
   .Index-page-image:before {
     background-color: var(--nobackground);
+  }
+  *,
+  p {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: $basetext;
+  }
+  strong {
+    font-family: $font-bold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $basetext;
   }
   h1 {
     font-family: $font-heavy;
@@ -93,6 +96,9 @@
     text-transform: uppercase;
     font-kerning: auto;
     letter-spacing: normal;
+    b {
+      color: $fluid-prime-orange;
+    }
   }
   h2 {
     font-family: $font-bold;
@@ -113,13 +119,7 @@
     font-kerning: auto;
     letter-spacing: normal;
   }
-  strong,
-  b {
-    font-family: $font-bold;
-    font-weight: normal;
-    font-style: normal;
-    font-size: $basetext;
-  }
+
   a {
     text-decoration: none;
     color: $c-link;
@@ -127,39 +127,43 @@
       color: $c-link-hover;
       transition: $transition-color;
     }
-    &.sqs-block-button-element--small.sqs-block-button-element,
-    .sqs-editable-button {
-      //todo
-      background: $c-button;
-      color: $c-button-text;
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      overflow: hidden;
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      -webkit-transition-property: color, background-color;
-      transition-property: color, background-color;
-      &:hover,
-      &:focus,
-      &:active {
-        //todo
-        -webkit-animation-name: hvr-back-pulse;
-        animation-name: hvr-back-pulse;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-delay: 0.5s;
-        animation-delay: 0.5s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        background-color: $c-button-hover;
-        color: white;
-      }
-    }
+  }
+  .sqs-block-button-element--small.sqs-block-button-element,
+  .sqs-editable-button,
+  .lightbox-handle.sqs-system-button.sqs-editable-button {
+    //todo
+    @extend %allbuttons;
+  }
+  hr {
+  }
+}
+%allbuttons {
+  //todo
+  background: $c-button;
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: $white;
+  display: inline-block;
+  padding: 6px 10px 8px;
+  margin: 5px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+  &:hover,
+  &:focus {
+    //todo
+    background: lighten($c-button, 5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    transform: translateY(-2px);
+    transition: all 0.25s 0s ease-out;
+    color: $c-link-hover;
+  }
+  &:active {
+    background: darken($c-button, 5);
+    box-shadow: 0 1px 0px 0 rgba($fluid-prime-teal, 0.25);
+    transform: translate3d(0, 2px, 0);
+    transition: all 0.025s 0s ease-out;
   }
 }
 
@@ -168,28 +172,101 @@
   background-color: $white;
 }
 
+#ff2019-festivbanner,
 #ff2019-festivbanner-1 {
   background-color: $fluid-prime-teal;
   & figure.Index-page-image.loaded {
-    max-width: 1080px;
     @media screen and (max-width: $tablet) {
       //hide horizontal image on mobile
       display: none !important;
     }
   }
-
-  //hide verticle image on desktop
-  @media screen and (min-width: $tablet + 1) {
-    #block-yui_3_17_2_1_1565153504851_4966 {
-      display: none !important;
-    }
+}
+#block-yui_3_17_2_1_1565335709531_4810,
+#block-fb5b86e1fa5264ec10cd {
+  @media screen and (max-width: $tablet) {
+    //hide horizontal image on mobile
+    display: none !important;
+  }
+}
+//hide verticle image on desktop
+@media screen and (min-width: $tablet + 1) {
+  #block-yui_3_17_2_1_1565153504851_4966,
+  #block-ebb42e46870ff0825577 {
+    display: none !important;
   }
 }
 
+// widen the code black on the festival page
+#block-yui_3_17_2_1_1565256639647_8158 {
+  width: 1124px;
+}
+
+#ff2019-festabout {
+}
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
     tran
 }
 */
+
+/* -------------------------- wave footer animation ------------------------- */
+/* ---------------------- html, body { height: 100%; } ---------------------- */
+
+body {
+  background: radial-gradient(
+    ellipse at center,
+    rgb(255, 248, 234) 0%,
+    rgba($fluid-secondary-light, 1) 35%,
+    $fluid-teal-light 100%
+  );
+  overflow: hidden;
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
 /* End Fluid 2019 css */

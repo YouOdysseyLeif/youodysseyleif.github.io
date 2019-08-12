@@ -1,0 +1,164 @@
+// colour stuff
+$white: #ffffff;
+$lightBG: #dce1df;
+$salmon: #e17828;
+
+$teal: #00a4a7;
+$tealMid: #0ebac7;
+$tealContrast: #33ffff;
+$tealShade: #007c85;
+
+$charcoal: #404040;
+
+body {
+  background-color: #3d3d3d;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato";
+}
+.show-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  flex: 1;
+  flex-basis: 300px;
+  flex-grow: 1;
+  height: 169px;
+  background: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  overflow: hidden;
+  position: relative;
+  & img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  h1 {
+    color: #ff3838;
+    letter-spacing: 1px;
+    margin: 0px;
+  }
+  & p {
+    line-height: 24px;
+    height: 70%;
+  }
+  button {
+    width: fit-content;
+    height: 40px;
+    cursor: pointer;
+    border-style: none;
+    background-color: #ff3838;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(0.95) translateX(-5px);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  figcaption {
+    display: block;
+    padding: 0.625rem 0.5rem;
+    transform: translateY(-1rem);
+    background: rgba(#40424a, 0.8);
+  }
+  &:hover {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(0.97);
+    opacity: 1 !important;
+    .card-flap {
+      background: $white;
+      transform: rotateX(0deg);
+    }
+    .flap1 {
+      transition: all 0.3s 0s ease-out;
+    }
+    .flap2 {
+      transition: all 0.3s 0.2s ease-out;
+    }
+    & .descriptions {
+      left: 0px;
+      transition: all 0.7s ease-in-out;
+      clip-path: circle(75%);
+    }
+    & img {
+      transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      transform: scale(1.6) rotate(20deg);
+      filter: blur(3px);
+    }
+  }
+}
+
+.descriptions {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 400px;
+  transition: all 0.7s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  clip-path: circle(0% at 100% 100%);
+}
+
+div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.card-flap {
+  background: darken($white, 15);
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+div.flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+
+  div.card-flap {
+    background: $white;
+    transform: rotateX(0deg);
+  }
+  div.flap1 {
+    transition: all 0.3s 0s ease-out;
+  }
+  div.flap2 {
+    transition: all 0.3s 0.2s ease-out;
+  }
+}
