@@ -67,8 +67,6 @@
 @import "global/variables";
 
 /* general */
-%headerfonts {
-}
 
 %fluidfeststyle {
   .Index-page-image:before {
@@ -172,9 +170,16 @@
   background-color: $white;
 }
 
-#ff2019-festivbanner,
-#ff2019-festivbanner-1 {
+[id^="ff2019-festivbanner"] {
   background-color: $fluid-prime-teal;
+  h1,
+  h2,
+  h3 {
+    color: $c-button-hover;
+  }
+  p {
+    color: $c-body-w2;
+  }
   & figure.Index-page-image.loaded {
     @media screen and (max-width: $tablet) {
       //hide horizontal image on mobile
@@ -182,6 +187,28 @@
     }
   }
 }
+
+[id^="ff2019-week1"] {
+  h1,
+  h2,
+  h3 {
+    color: $fluid-prime-orange;
+  }
+  p {
+    color: $c-body-w2;
+  }
+}
+[id^="ff2019-week2"] {
+  h1,
+  h2,
+  h3 {
+    color: $fluid-prime-teal;
+  }
+  p {
+    color: $c-body-w1;
+  }
+}
+
 #block-yui_3_17_2_1_1565335709531_4810,
 #block-fb5b86e1fa5264ec10cd {
   @media screen and (max-width: $tablet) {
@@ -202,8 +229,6 @@
   width: 1124px;
 }
 
-#ff2019-festabout {
-}
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);

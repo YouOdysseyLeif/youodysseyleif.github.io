@@ -1,7 +1,9 @@
 // Colour Variables
-$fluid-prime-teal: rgb(11, 162, 168);
+$fluid-prime-teal: #0ba2a8;
+$fluid-teal-text: #0a2e30;
 $fluid-teal-light: lighten($fluid-prime-teal, 30%);
 $fluid-prime-orange: #e17828;
+$fluid-orange-text: #351c0a;
 $fluid-secondary-light: #fdcb96;
 $fluid-secondary-dark: #e88426;
 // palette
@@ -15,6 +17,8 @@ $nobackground: rgba(0, 0, 0, 0);
 $dark-red: #550c00;
 // semantic
 $c-body: $charcoal;
+$c-body-w1: $fluid-teal-text;
+$c-body-w2: $fluid-orange-text;
 $c-body-background: $white;
 $c-button: $fluid-prime-teal;
 $c-button-cancel: $gray;

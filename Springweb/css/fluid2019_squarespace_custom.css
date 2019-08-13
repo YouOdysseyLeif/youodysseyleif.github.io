@@ -138,16 +138,44 @@
   background-color: #ffffff;
 }
 
-#ff2019-festivbanner,
-#ff2019-festivbanner-1 {
+[id^="ff2019-festivbanner"] {
   background-color: #0ba2a8;
 }
 
+[id^="ff2019-festivbanner"] h1,
+[id^="ff2019-festivbanner"] h2,
+[id^="ff2019-festivbanner"] h3 {
+  color: #fdcb96;
+}
+
+[id^="ff2019-festivbanner"] p {
+  color: #351c0a;
+}
+
 @media screen and (max-width: 768px) {
-  #ff2019-festivbanner figure.Index-page-image.loaded,
-  #ff2019-festivbanner-1 figure.Index-page-image.loaded {
+  [id^="ff2019-festivbanner"] figure.Index-page-image.loaded {
     display: none !important;
   }
+}
+
+[id^="ff2019-week1"] h1,
+[id^="ff2019-week1"] h2,
+[id^="ff2019-week1"] h3 {
+  color: #e17828;
+}
+
+[id^="ff2019-week1"] p {
+  color: #351c0a;
+}
+
+[id^="ff2019-week2"] h1,
+[id^="ff2019-week2"] h2,
+[id^="ff2019-week2"] h3 {
+  color: #0ba2a8;
+}
+
+[id^="ff2019-week2"] p {
+  color: #0a2e30;
 }
 
 @media screen and (max-width: 768px) {
