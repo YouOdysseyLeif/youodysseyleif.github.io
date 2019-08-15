@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/schedule2.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="../schedule tests/schedule2.js"></script>
     
     <!--Fancy Card Selection-->
   </head>
@@ -21,30 +18,32 @@
   <div class="fluidcal">
 <!-- --------- to filter divs based on class id related to day-id ---------- -->
     <div class="date-picker">
-      <h3 class="sched-month">October</h3><hr class="visible"/>
+      <h3 class="sched-month">October</h3>
+      <p>Sort by Date</p>
+      <hr class="visible"/>
       <div class="date-choose">
-        <a href="#" class="btn date-btn active alldates">Show All</a>
-        <a href="#" class="btn date-btn wk1 oct4">4</a>
-        <a href="#" class="btn date-btn wk1 oct15">15</a>
-        <a href="#" class="btn date-btn wk1 oct16">16</a>
-        <a href="#" class="btn date-btn wk1 oct17">17</a>
-        <a href="#" class="btn date-btn wk1 oct18">18</a>
-        <a href="#" class="btn date-btn wk1 oct19">19</a>
-        <a href="#" class="btn date-btn wk2 oct22">22</a>
-        <a href="#" class="btn date-btn wk2 oct23">23</a>
-        <a href="#" class="btn date-btn wk2 oct24">24</a>
-        <a href="#" class="btn date-btn wk2 oct25">25</a>
-        <a href="#" class="btn date-btn wk2 oct26">26</a>
-        <a href="#" class="btn date-btn wk2 oct27">27</a>
+        <a class="btn date-btn active showall" data-filter="card">Show All</a>
+        <a class="btn date-btn" data-filter="oct4">4</a>
+        <a class="btn date-btn" data-filter="oct15">15</a>
+        <a class="btn date-btn" data-filter="oct16">16</a>
+        <a class="btn date-btn" data-filter="oct17">17</a>
+        <a class="btn date-btn" data-filter="oct18">18</a>
+        <a class="btn date-btn" data-filter="oct19">19</a>
+        <a class="btn date-btn" data-filter="oct22">22</a>
+        <a class="btn date-btn" data-filter="oct23">23</a>
+        <a class="btn date-btn" data-filter="oct24">24</a>
+        <a class="btn date-btn" data-filter="oct25">25</a>
+        <a class="btn date-btn" data-filter="oct26">26</a>
+        <a class="btn date-btn" data-filter="oct27">27</a>
       </div>
     </div>
 <!-- ---------------------- The individual show cards ---------------------- -->
 <!-- ------ todo grab images from gallery via javascript if possible ------- -->
 
-    <div class="cards">
+    <div id="eventcards" class="cards">
 
       <p>These are placeholder images. Don't worry they will change to the real ones when we have them ready. Also they
-        are basically random, so I'm not repsonsible for any of them.
+        are basically random, so I'm not repsonsible for any of them. Booya.
       </p>
 
 <!-- ----------------------------- begin card ------------------------------ -->
@@ -744,7 +743,7 @@
             </div>
       </div>
 
-      <div class="card oct25 oct26" data-event="event-15">
+      <div class="card oct27" data-event="event-15">
         <img
           class="card__image"
           src="https://source.unsplash.com/500x280/?library"
@@ -779,7 +778,11 @@
 
 
     </div>
-  </div> <!--end--> 
+  </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../schedule tests/schedule2.js"></script>
+    <!--end--> 
   <!--end fluid show display with more info on touch or click-->
   </body>
 </html>

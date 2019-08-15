@@ -50,6 +50,7 @@
   -webkit-font-kerning: auto;
           font-kerning: auto;
   letter-spacing: normal;
+  color: #104e52;
 }
 
 [id^="ff2019"] h1 b {
@@ -61,7 +62,7 @@
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
-  color: #404040;
+  color: #104e52;
   font-size: 2em;
 }
 
@@ -70,7 +71,7 @@
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
-  color: #404040;
+  color: #fdcb96;
   font-size: 1.3em;
   text-transform: uppercase;
   -webkit-font-kerning: auto;
@@ -138,6 +139,11 @@
   background-color: #ffffff;
 }
 
+[id^="ff2019"] .sqs-block-image.design-layout-collage.image-card,
+[id^="ff2019"] .image-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 [id^="ff2019-festivbanner"] {
   background-color: #0ba2a8;
 }
@@ -149,7 +155,7 @@
 }
 
 [id^="ff2019-festivbanner"] p {
-  color: #351c0a;
+  color: #104e52;
 }
 
 @media screen and (max-width: 768px) {
@@ -158,24 +164,62 @@
   }
 }
 
-[id^="ff2019-week1"] h1,
-[id^="ff2019-week1"] h2,
-[id^="ff2019-week1"] h3 {
-  color: #e17828;
-}
-
 [id^="ff2019-week1"] p {
-  color: #351c0a;
-}
-
-[id^="ff2019-week2"] h1,
-[id^="ff2019-week2"] h2,
-[id^="ff2019-week2"] h3 {
-  color: #0ba2a8;
+  color: #104e52;
 }
 
 [id^="ff2019-week2"] p {
-  color: #0a2e30;
+  color: #351c0a;
+}
+
+[id^="ff2019-week1-banner"] {
+  background-color: #e17828;
+}
+
+[id^="ff2019-week1-banner"] h1,
+[id^="ff2019-week1-banner"] h2 {
+  color: #0ba2a8;
+}
+
+[id^="ff2019-week1-banner"] p {
+  color: #104e52;
+}
+
+[id^="ff2019-week2-banner"] {
+  background-color: #0ba2a8;
+}
+
+[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element,
+[id^="ff2019-week2-banner"] .sqs-editable-button,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button {
+  background-color: #e17828;
+}
+
+[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:hover, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:focus,
+[id^="ff2019-week2-banner"] .sqs-editable-button:hover,
+[id^="ff2019-week2-banner"] .sqs-editable-button:focus,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:hover,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus {
+  background: #e4863e;
+  -webkit-box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: all 0.25s 0s ease-out;
+  transition: all 0.25s 0s ease-out;
+  color: #fdcb96;
+}
+
+[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:active,
+[id^="ff2019-week2-banner"] .sqs-editable-button:active,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:active {
+  background: #d26c1d;
+  -webkit-box-shadow: 0 1px 0px 0 rgba(225, 120, 40, 0.25);
+          box-shadow: 0 1px 0px 0 rgba(225, 120, 40, 0.25);
+  -webkit-transform: translate3d(0, 2px, 0);
+          transform: translate3d(0, 2px, 0);
+  -webkit-transition: all 0.025s 0s ease-out;
+  transition: all 0.025s 0s ease-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -202,82 +246,5 @@
     tran
 }
 */
-/* -------------------------- wave footer animation ------------------------- */
-/* ---------------------- html, body { height: 100%; } ---------------------- */
-body {
-  background: radial-gradient(ellipse at center, #fff8ea 0%, #fdcb96 35%, #58eef4 100%);
-  overflow: hidden;
-}
-
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-}
-
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-  top: -175px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@-webkit-keyframes swell {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
-}
-
-@keyframes swell {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
-}
-
 /* End Fluid 2019 css */
 /*# sourceMappingURL=fluid2019_squarespace_custom.css.map */

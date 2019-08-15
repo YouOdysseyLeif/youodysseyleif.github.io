@@ -1,6 +1,6 @@
 // Colour Variables
 $fluid-prime-teal: #0ba2a8;
-$fluid-teal-text: #0a2e30;
+$fluid-teal-text: #104e52;
 $fluid-teal-light: lighten($fluid-prime-teal, 30%);
 $fluid-prime-orange: #e17828;
 $fluid-orange-text: #351c0a;
@@ -17,12 +17,14 @@ $nobackground: rgba(0, 0, 0, 0);
 $dark-red: #550c00;
 // semantic
 $c-body: $charcoal;
-$c-body-w1: $fluid-teal-text;
-$c-body-w2: $fluid-orange-text;
+$c-body-w1: $fluid-orange-text;
+$c-body-w2: $fluid-teal-text;
 $c-body-background: $white;
 $c-button: $fluid-prime-teal;
+$c-button-week2: $fluid-prime-orange;
 $c-button-cancel: $gray;
 $c-button-hover: $fluid-secondary-light;
+$c-button-hover-week2: $fluid-teal-light;
 $c-button-text: $white;
 $c-error: $dark-red;
 $c-link: $fluid-prime-orange;

@@ -1,188 +1,3 @@
-/*Colour Variables*/
-
-:root {
-  /* week 1 is green*/
-  --week1-light: rgb(179, 219, 200);
-  --week1-dark: rgb(0, 169, 141);
-  /* week 2 is blue*/
-  --week2-light: rgb(140, 200, 234);
-  --week2-dark: rgb(22, 123, 192);
-  /* Week 3 is red*/
-  --week3-light: rgb(244, 152, 134);
-  --week3-dark: rgb(238, 50, 36);
-}
-
-/*Fluid Show Gallery*/
-
-/*Hover Text*/
-
-.sqs-gallery-block-grid .slide .margin-wrapper .image-slide-title {
-  display: none;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: futura-pt-bold, sans-serif;
-  letter-spacing: 2px;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  color: white;
-  text-shadow: 0.1em 0.08em var(--week1-dark);
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  pointer-events: none;
-  transition: opacity 0.1s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-}
-
-.sqs-gallery-block-grid
-  .slide
-  .margin-wrapper
-  > a[href*="ff2018-week1"]
-  ~ .image-slide-title {
-  text-shadow: 0.1em 0.08em var(--week1-dark);
-}
-
-.sqs-gallery-block-grid
-  .slide
-  .margin-wrapper
-  > a[href*="ff2018-week2"]
-  ~ .image-slide-title {
-  text-shadow: 0.1em 0.08em var(--week2-dark);
-}
-
-.sqs-gallery-block-grid
-  .slide
-  .margin-wrapper
-  > a[href*="ff2018-week3"]
-  ~ .image-slide-title {
-  text-shadow: 0.1em 0.08em var(--week3-dark);
-}
-
-.sqs-gallery-block-grid .slide .margin-wrapper a.image-slide-anchor {
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.9s ease-in-out;
-  -webkit-transition: opacity 0.4s ease-in-out;
-}
-
-.sqs-gallery-block-grid .slide .margin-wrapper a.image-slide-anchor:hover {
-  opacity: 0.35;
-}
-
-/*Center Text*/
-
-.slide .margin-wrapper:hover .image-slide-title {
-  display: inline-block;
-}
-
-.sqs-gallery-block-grid.sqs-gallery-block-meta-only-title
-  .margin-wrapper
-  .image-slide-title {
-  white-space: normal !important;
-  max-width: 100% !important;
-  padding: 0 !important;
-}
-
-/*Changes background color*/
-
-.margin-wrapper a[href*="ff2018-week1"]:hover {
-  background-color: var(--week1-light) !important;
-}
-
-.margin-wrapper a[href*="ff2018-week2"]:hover {
-  background-color: var(--week2-light) !important;
-}
-
-.margin-wrapper a[href*="ff2018-week3"]:hover {
-  background-color: var(--week3-light) !important;
-}
-
-a img.thumb-image {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px var(--week3-dark);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-/*Hover Zoom*/
-
-a img.thumb-image:hover,
-a img.thumb-image:active {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-/*Fluid Button Style*/
-
-a.sqs-block-button-element--small.sqs-block-button-element {
-  background-color: var(--week3-light) !important;
-  border: 5px solid var(--week3-light) !important;
-  box-shadow: 10px 5px var(--week3-dark);
-  -webkit-box-shadow: 10px 5px var(--week3-dark);
-  -moz-box-shadow: 10px 5px var(--week3-dark);
-  box-shadow: 10px 5px var(--week3-dark);
-}
-
-a.sqs-block-button-element--small.sqs-block-button-element:hover {
-  color: var(--week3-dark);
-  background-color: var(--week3-light) !important;
-  border: 5px solid var(--week3-dark) !important;
-  .border-offset {
-    padding-bottom: 5px;
-    padding-right: 10px;
-  }
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-transition: 0.2s webkit-box-shadow ease-in-out;
-  -moz-transition: 0.2s moz-box-shadow ease-in-out;
-  -o-transition: 0.2s box-shadow ease-in-out;
-  transition: 0.2s box-shadow ease-in-out;
-}
-
-span.lightbox-handle.sqs-system-button.sqs-editable-button {
-  background-color: var(--week3-light) !important;
-  border: 5px solid var(--week3-light) !important;
-  box-shadow: 10px 5px var(--week3-dark);
-  -webkit-box-shadow: 10px 5px var(--week3-dark);
-  -moz-box-shadow: 10px 5px var(--week3-dark);
-  box-shadow: 10px 5px var(--week3-dark);
-}
-
-span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
-  color: #ffffff !important;
-  background-color: var(--week3-light) !important;
-  border: 5px solid var(--week3-dark) !important;
-  .border-offset {
-    padding-bottom: 5px;
-    padding-right: 10px;
-  }
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-transition: 0.2s webkit-box-shadow ease-in-out;
-  -moz-transition: 0.2s moz-box-shadow ease-in-out;
-  -o-transition: 0.2s box-shadow ease-in-out;
-  transition: 0.2s box-shadow ease-in-out;
-}
-
-/* Fluid Fest week 1 headers */
-
 #know-the-rules-header,
 #that-chnk-in-your-armour-header,
 #dialogue-header,
@@ -217,9 +32,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     letter-spacing: 0.2em;
   }
 }
-
-/* Fluid Fest week 2 headers */
-
 #form-moving-forward-header,
 #jezebel-at-the-still-point-header,
 #kittly-bender-header,
@@ -253,9 +65,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     letter-spacing: 0.2em;
   }
 }
-
-/* Fluid Fest week 3 headers */
-
 #lisbeth-gruwez-dances-bob-dylan-header,
 #study-for-anima-darkroom-header,
 #isolated-studies-header {
@@ -285,11 +94,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     letter-spacing: 0.2em;
   }
 }
-
-/*#ff2018schedule{
-   background-color: #F49886;
-}*/
-
 #collection-5bb3cfdb1905f4dbb4623458,
 #collection-5bb3d035a4222f7f3f7d6234,
 #collection-5bb545e7e4966b8d08ad8645 {
@@ -325,7 +129,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     font-size: 18px;
   }
 }
-
 #festiv_banner,
 #festivbanner-1 {
   .Index-page-image:before {
@@ -355,7 +158,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     letter-spacing: 0.2em;
   }
 }
-
 #ff2018-deepdive {
   h1 {
     font-family: futura-pt-bold, sans-serif;
@@ -387,7 +189,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     color: #ee3224;
   }
 }
-
 #festabout,
 #collection-5bb54afa652deaac13436486 {
   .Index-page-image:before {
@@ -421,11 +222,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     font-size: 18px;
   }
 }
-
-/*Fluid Button Style*/
-
-/*Week 1*/
-
 #know-the-rules-info,
 #that-chnk-in-your-armour-info,
 #dialogue-info,
@@ -444,7 +240,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     background-color: #b7dcc7 !important;
   }
 }
-
 #know-the-rules-info,
 #that-chnk-in-your-armour-info,
 #dialogue-info,
@@ -466,9 +261,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     transition: 0.2s box-shadow ease-in-out;
   }
 }
-
-/*Week 2*/
-
 #form-moving-forward-info,
 #jezebel-at-the-still-point-info,
 #kittly-bender-info,
@@ -486,7 +278,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     background-color: #8cc8ea !important;
   }
 }
-
 #form-moving-forward-info,
 #jezebel-at-the-still-point-info,
 #kittly-bender-info,
@@ -507,9 +298,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     transition: 0.2s box-shadow ease-in-out;
   }
 }
-
-/*Week 3*/
-
 #lisbeth-gruwez-dances-bob-dylan-info,
 #study-for-anima-darkroom-info,
 #isolated-studies-info,
@@ -524,7 +312,6 @@ span.lightbox-handle.sqs-system-button.sqs-editable-button:hover {
     background-color: #f49886 !important;
   }
 }
-
 #lisbeth-gruwez-dances-bob-dylan-info,
 #study-for-anima-darkroom-info,
 #isolated-studies-info,

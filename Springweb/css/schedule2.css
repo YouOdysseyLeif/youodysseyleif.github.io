@@ -1,5 +1,5 @@
 /*
-body {
+.fluidcal {
   background: $lightBG;
   color: $charcoal;
   text-rendering: optimizeLegibility;
@@ -11,13 +11,8 @@ body {
 }
 
 .datepicker .date-choose {
-  display: block;
+  display: inline-block;
   width: 60%;
-}
-
-.datepicker .date-choose .date-btn {
-  width: 1.25rem;
-  text-align: center;
 }
 
 hr.invisible {
@@ -70,10 +65,26 @@ a.btn:active {
   transition: all 0.025s 0s ease-out;
 }
 
+a.date-btn {
+  min-width: 1.25rem;
+  text-align: center;
+}
+
+a.date-btn.active {
+  background: #e17828;
+  -webkit-box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+          box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  -webkit-transform: translate3d(0, 1px, 0);
+          transform: translate3d(0, 1px, 0);
+  -webkit-transition: all 0.025s 0s ease-out;
+  transition: all 0.025s 0s ease-out;
+}
+
 div.cards {
   margin: 40px auto;
   max-width: 100%;
   text-align: center;
+  display: inline-block;
 }
 
 div.cards.showing .card {
@@ -83,13 +94,15 @@ div.cards.showing .card {
           transform: scale(0.88);
 }
 
+div.cards .card {
+  display: inherit;
+}
+
 .card {
   background: #ffffff;
   display: inline-block;
   margin: 5px;
   max-width: 255px;
-  -webkit-perspective: 1000;
-          perspective: 1000;
   position: relative;
   text-align: left;
   -webkit-transition: all 0.3s 0s ease-in;
@@ -99,6 +112,10 @@ div.cards.showing .card {
 
 .card img {
   max-width: 255px;
+}
+
+.card .view {
+  display: inline-block;
 }
 
 .card .card-title {
@@ -241,86 +258,4 @@ div.cards.showing .card {
   -webkit-transition: all 0.3s 0.2s ease-out;
   transition: all 0.3s 0.2s ease-out;
 }
-
-/* -------------------------------------------------------------------------- */
-/*                          animated ocean background                         */
-/* -------------------------------------------------------------------------- */
-.fluidcal {
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(35%, #fffeea), to(rgba(191, 245, 245, 0.9)));
-  background: linear-gradient(#ffffff 0%, #fffeea 35%, rgba(191, 245, 245, 0.9) 100%);
-  overflow: hidden;
-}
-
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #007c85;
-}
-
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-  top: -175px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@-webkit-keyframes swell {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
-}
-
-@keyframes swell {
-  0%,
-  100% {
-    -webkit-transform: translate3d(0, -25px, 0);
-            transform: translate3d(0, -25px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, 5px, 0);
-            transform: translate3d(0, 5px, 0);
-  }
-}
-
-/* ------------------------- end animated background ------------------------ */
 /*# sourceMappingURL=schedule2.css.map */

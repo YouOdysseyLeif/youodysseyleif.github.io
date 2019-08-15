@@ -37,14 +37,16 @@ $(document).ready(function() {
   });
 });
 
-filterSelection("all");
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName(".cards");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+var $boxs = $(".card");
+var $btns = $(".date-btn").on("click", function() {
+  var active = $btns
+    .removeClass("active")
+    .filter(this)
+    .addClass("active")
+    .data("filter");
+
+  $boxs
+    .hide()
+    .filter("." + active)
+    .fadeIn(450);
+});
