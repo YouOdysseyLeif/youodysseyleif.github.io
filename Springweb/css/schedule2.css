@@ -107,7 +107,6 @@ div.cards .card {
   background: #ffffff;
   display: inline-block;
   margin: 5px;
-  max-width: 20vw;
   min-width: 255px;
   position: relative;
   text-align: left;
@@ -116,20 +115,43 @@ div.cards .card {
   z-index: 1;
 }
 
+@media screen and (min-width: 1041px) {
+  .card {
+    max-width: 22vw;
+  }
+}
+
 @media screen and (max-width: 705px) {
   .card {
     max-width: 92vw;
   }
 }
 
+@media screen and (min-width: 706px) and (max-width: 1040px) {
+  .card {
+    max-width: 35vw;
+  }
+}
+
 .card img {
-  max-width: 20vw;
   min-width: 255px;
+}
+
+@media screen and (min-width: 1041px) {
+  .card img {
+    max-width: 22vw;
+  }
 }
 
 @media screen and (max-width: 705px) {
   .card img {
     max-width: 92vw;
+  }
+}
+
+@media screen and (min-width: 706px) and (max-width: 1040px) {
+  .card img {
+    max-width: 35vw;
   }
 }
 
