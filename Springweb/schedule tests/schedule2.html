@@ -19,10 +19,10 @@
 <!-- --------- to filter divs based on class id related to day-id ---------- -->
     <div class="date-picker">
       <h3 class="sched-month">October</h3>
-      <p>Sort by Date</p>
       <hr class="visible"/>
       <div class="date-choose">
         <a class="btn date-btn active showall" data-filter="card">Show All</a>
+        <hr class="mobile-break invisible"/>
         <a class="btn date-btn" data-filter="oct4">4</a>
         <a class="btn date-btn" data-filter="oct15">15</a>
         <a class="btn date-btn" data-filter="oct16">16</a>
@@ -34,18 +34,13 @@
         <a class="btn date-btn" data-filter="oct24">24</a>
         <a class="btn date-btn" data-filter="oct25">25</a>
         <a class="btn date-btn" data-filter="oct26">26</a>
-        <a class="btn date-btn" data-filter="oct27">27</a>
+        <a class="btn date-btn" data-filter="oct27">27</a>     
       </div>
     </div>
 <!-- ---------------------- The individual show cards ---------------------- -->
 <!-- ------ todo grab images from gallery via javascript if possible ------- -->
 
     <div id="eventcards" class="cards">
-
-      <p>These are placeholder images. Don't worry they will change to the real ones when we have them ready. Also they
-        are basically random, so I'm not repsonsible for any of them. Booya.
-      </p>
-
 <!-- ----------------------------- begin card ------------------------------ -->
       <div class="card pass" data-event="4-pack">
           <img class="card__image" src="https://source.unsplash.com/500x280/?pack" alt="4-Pack" />

@@ -1,10 +1,7 @@
-/*
 .fluidcal {
-  background: $lightBG;
-  color: $charcoal;
-  text-rendering: optimizeLegibility;
+  padding-bottom: 20em;
 }
-*/
+
 .datepicker {
   margin: 40px auto;
   text-align: center;
@@ -17,6 +14,14 @@
 
 hr.invisible {
   border: none;
+  height: 0px;
+  display: none;
+}
+
+@media screen and (max-width: 705px) {
+  hr.invisible {
+    display: block;
+  }
 }
 
 hr.visible {
@@ -81,7 +86,7 @@ a.date-btn.active {
 }
 
 div.cards {
-  margin: 40px auto;
+  margin: 30px auto;
   max-width: 100%;
   text-align: center;
   display: inline-block;
@@ -102,7 +107,8 @@ div.cards .card {
   background: #ffffff;
   display: inline-block;
   margin: 5px;
-  max-width: 255px;
+  max-width: 20vw;
+  min-width: 255px;
   position: relative;
   text-align: left;
   -webkit-transition: all 0.3s 0s ease-in;
@@ -110,8 +116,21 @@ div.cards .card {
   z-index: 1;
 }
 
+@media screen and (max-width: 705px) {
+  .card {
+    max-width: 92vw;
+  }
+}
+
 .card img {
-  max-width: 255px;
+  max-width: 20vw;
+  min-width: 255px;
+}
+
+@media screen and (max-width: 705px) {
+  .card img {
+    max-width: 92vw;
+  }
 }
 
 .card .view {
@@ -125,7 +144,6 @@ div.cards .card {
   z-index: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 12rem;
 }
 
 .card .card-title a.toggle-info {
@@ -138,8 +156,8 @@ div.cards .card {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  -webkit-transform: translate(30px, -50px);
-          transform: translate(30px, -50px);
+  -webkit-transform: translate(6px, -49px);
+          transform: translate(6px, -49px);
   z-index: 20;
 }
 

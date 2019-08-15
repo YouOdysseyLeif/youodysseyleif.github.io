@@ -35,18 +35,19 @@ $(document).ready(function() {
       zindex++;
     }
   });
-});
-
-var $boxs = $(".card");
-var $btns = $(".date-btn").on("click", function() {
-  var active = $btns
-    .removeClass("active")
-    .filter(this)
-    .addClass("active")
-    .data("filter");
-
-  $boxs
-    .hide()
-    .filter("." + active)
-    .fadeIn(450);
+  var $boxs = $(".card");
+  var $btns = $(".date-btn").on("click", function() {
+    var active = $btns
+      .removeClass("active")
+      .filter(this)
+      .addClass("active")
+      .data("filter");
+    if ($("div.cards").hasClass("showing")) {
+      $("div.cards").removeClass("showing");
+    }
+    $boxs
+      .hide()
+      .filter("." + active)
+      .fadeIn(450);
+  });
 });

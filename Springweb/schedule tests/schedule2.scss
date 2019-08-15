@@ -13,13 +13,10 @@ $teallight: rgba(191, 245, 245, 0.9);
 $tealShade: #007c85;
 
 $charcoal: #404040;
-/*
+
 .fluidcal {
-  background: $lightBG;
-  color: $charcoal;
-  text-rendering: optimizeLegibility;
+  padding-bottom: 20em;
 }
-*/
 
 .datepicker {
   margin: 40px auto;
@@ -32,6 +29,11 @@ $charcoal: #404040;
 
 hr.invisible {
   border: none;
+  height: 0px;
+  display: none;
+  @media screen and (max-width: 705px) {
+    display: block;
+  }
 }
 
 hr.visible {
@@ -85,7 +87,7 @@ a.date-btn {
 }
 
 div.cards {
-  margin: 40px auto;
+  margin: 30px auto;
   max-width: 100%;
   text-align: center;
   display: inline-block;
@@ -105,15 +107,25 @@ div.cards {
   background: $white;
   display: inline-block;
   margin: 5px;
-  max-width: 255px;
+  //max-width: calc(100vw / 4);
+  max-width: 20vw;
+  min-width: 255px;
   //perspective: 1000;
   position: relative;
   text-align: left;
   transition: all 0.3s 0s ease-in;
   z-index: 1;
+  @media screen and (max-width: 705px) {
+    max-width: 92vw;
+  }
 
   img {
-    max-width: 255px;
+    //max-width: calc(100vw / 5);
+    max-width: 20vw;
+    min-width: 255px;
+    @media screen and (max-width: 705px) {
+      max-width: 92vw;
+    }
   }
   .view {
     display: inline-block;
@@ -125,7 +137,7 @@ div.cards {
     z-index: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 12rem;
+    //max-width: 12rem;
 
     a.toggle-info {
       height: 32px;
@@ -137,7 +149,7 @@ div.cards {
       position: absolute;
       right: 0px;
       bottom: 0px;
-      transform: translate(30px, -50px);
+      transform: translate(6px, -49px);
       z-index: 20;
 
       span {
