@@ -1,0 +1,269 @@
+// font stuff
+
+// colour stuff
+$white: #ffffff;
+$lightBG: #dce1df;
+$orange: #e17828;
+$lightorange: #fdcb96;
+
+$teal: #0ba2a8;
+$tealMid: #2ebac4;
+$tealContrast: #33ffff;
+$teallight: rgba(191, 245, 245, 0.9);
+$tealShade: #007c85;
+
+$charcoal: #404040;
+
+.fluidcal {
+  padding-bottom: 20em;
+}
+
+.datepicker {
+  margin: 40px auto;
+  text-align: center;
+  .date-choose {
+    display: inline-block;
+    width: 60%;
+  }
+}
+
+hr.invisible {
+  border: none;
+  height: 0px;
+  display: none;
+  @media screen and (max-width: 705px) {
+    display: block;
+  }
+}
+
+hr.visible {
+  width: 60%;
+  min-width: 8rem;
+  margin-left: 1rem;
+  text-align: left;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+a.btn {
+  background: $teal;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: $white;
+  display: inline-block;
+  padding: 6px 10px 8px;
+  margin: 5px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+
+.no-touch a.btn:hover {
+  background: lighten($teal, 2.5);
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+  background: darken($teal, 2.5);
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+
+a.date-btn {
+  min-width: 1.25rem;
+  text-align: center;
+  &.active {
+    //background: darken($teal, 2.5);
+    background: $orange;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+    transform: translate3d(0, 1px, 0);
+    transition: all 0.025s 0s ease-out;
+  }
+}
+
+div.cards {
+  margin: 30px auto;
+  max-width: 100%;
+  text-align: center;
+  display: inline-block;
+  &.showing {
+    .card {
+      cursor: pointer;
+      opacity: 0.6;
+      transform: scale(0.88);
+    }
+  }
+  .card {
+    display: inherit;
+  }
+}
+
+.card {
+  background: $white;
+  display: inline-block;
+  margin: 5px;
+  max-width: calc(90vw / 4);
+  max-width: 255px;
+  //perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  z-index: 1;
+  /*
+  @media screen and (min-width: 1041px) {
+    max-width: 22vw;
+  }
+    @media screen and (min-width: 706px) and (max-width: 1040px) {
+    max-width: 35vw;
+  }
+  */
+  @media screen and (max-width: 705px) {
+    max-width: 92vw;
+  }
+
+  img {
+    max-width: 255px;
+    /*@media screen and (min-width: 1041px) {
+      max-width: 22vw;
+    }
+        @media screen and (min-width: 706px) and (max-width: 1040px) {
+      max-width: 35vw;
+    }
+    */
+    @media screen and (max-width: 705px) {
+      max-width: 92vw;
+    }
+  }
+  .view {
+    display: inline-block;
+  }
+  .card-title {
+    background: $white;
+    padding: 6px 15px 10px;
+    position: relative;
+    z-index: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    //max-width: 12rem;
+
+    a.toggle-info {
+      height: 32px;
+      padding: 0;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 32px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      transform: translate(6px, -49px);
+      z-index: 20;
+
+      span {
+        background: $white;
+        display: block;
+        height: 2px;
+        position: absolute;
+        top: 16px;
+        transition: all 0.15s 0s ease-out;
+        width: 12px;
+      }
+
+      span.left {
+        right: 14px;
+        transform: rotate(45deg);
+      }
+      span.right {
+        left: 14px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  strong {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    small {
+      display: block;
+      font-size: 14;
+      p {
+        line-height: 0.2;
+      }
+    }
+  }
+
+  div.card-description {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  div.card-actions {
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+  }
+
+  div.card-flap {
+    background: darken($tealShade, 15);
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+  }
+  div.flap1 {
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+    background: lighten($tealShade, 15);
+  }
+  div.flap2 {
+    transition: all 0.3s 0s ease-out;
+    z-index: -2;
+    background: lighten($tealShade, 15);
+  }
+}
+
+.no-touch div.cards.showing {
+  .card:hover {
+    opacity: 0.94;
+    transform: scale(0.92);
+  }
+}
+
+.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  background: $white;
+
+  .card-title {
+    a.toggle-info {
+      background: $orange !important;
+      span {
+        top: 15px;
+      }
+      span.left {
+        right: 10px;
+      }
+      span.right {
+        left: 10px;
+      }
+    }
+  }
+  div.card-flap {
+    background: rgba(255, 255, 255, 0.95);
+    transform: rotateX(0deg);
+  }
+  div.flap1 {
+    transition: all 0.3s 0s ease-out;
+  }
+  div.flap2 {
+    transition: all 0.3s 0.2s ease-out;
+  }
+}
