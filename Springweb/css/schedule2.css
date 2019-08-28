@@ -165,7 +165,6 @@ div.cards .card {
   position: relative;
   z-index: 0;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .card .card-title a.toggle-info {
@@ -178,8 +177,8 @@ div.cards .card {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  -webkit-transform: translate(6px, -49px);
-          transform: translate(6px, -49px);
+  -webkit-transform: translate(6px, -94px);
+          transform: translate(6px, -94px);
   z-index: 20;
 }
 
@@ -206,15 +205,18 @@ div.cards .card {
           transform: rotate(-45deg);
 }
 
-.card strong {
+.card .card-title strong {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-.card strong small {
+.card .card-title strong small {
   display: block;
   font-size: 14;
+  line-height: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card div.card-description {
@@ -281,6 +283,10 @@ div.cards .card {
 
 .card.show .card-title a.toggle-info span.right {
   left: 10px;
+}
+
+.card.show .card-title small p {
+  word-wrap: break-word !important;
 }
 
 .card.show div.card-flap {
