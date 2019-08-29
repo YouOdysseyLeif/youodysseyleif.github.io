@@ -85,13 +85,19 @@
     font-style: normal;
     font-size: $basetext;
   }
-  h1 {
-    font-family: $font-heavy;
+  %headerfont {
     font-weight: normal;
     font-style: normal;
+    text-transform: uppercase;
+    @media screen and (max-width: $phone) {
+      font-size-adjust: 0.7;
+    }
+  }
+  h1 {
+    font-family: $font-heavy;
+    @extend %headerfont;
     font-size: $t-largest;
     line-height: $leading-tight;
-    text-transform: uppercase;
     font-kerning: auto;
     letter-spacing: normal;
     color: $fluid-teal-text;
@@ -101,20 +107,15 @@
   }
   h2 {
     font-family: $font-bold;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
+    @extend %headerfont;
     color: $fluid-teal-text;
     font-size: $t-larger;
   }
   h3 {
     font-family: $font-heavy;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
-    color: $fluid-secondary-light;
+    @extend %headerfont;
+    color: $fluid-secondary-dark;
     font-size: $t-large;
-    text-transform: uppercase;
     font-kerning: auto;
     letter-spacing: normal;
   }
@@ -132,13 +133,20 @@
   .lightbox-handle.sqs-system-button.sqs-editable-button {
     //todo
     @extend %allbuttons;
+    @extend %tealbuttons;
   }
   hr {
+  }
+  .sqs-block-button-element--medium.sqs-block-button-element {
+    @extend %allbuttons;
+    @extend %orangebuttons;
+    padding: 8px 12px 10px;
+    margin: 7px;
+    font-size: 1.2rem;
   }
 }
 %allbuttons {
   //todo
-  background: $c-button;
   border-radius: 4px;
   border: 0px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
@@ -152,20 +160,40 @@
   &:hover,
   &:focus {
     //todo
-    background: lighten($c-button, 5);
-    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
     transform: translateY(-2px);
     transition: all 0.25s 0s ease-out;
-    color: $c-link-hover;
   }
   &:active {
-    background: darken($c-button, 5);
-    box-shadow: 0 1px 0px 0 rgba($fluid-prime-teal, 0.25);
     transform: translate3d(0, 2px, 0);
     transition: all 0.025s 0s ease-out;
   }
 }
 
+%orangebuttons {
+  background: $c-button-week2;
+  &:focus {
+    background: lighten($c-button-week2, 5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    color: $c-link-hover;
+  }
+  &:active {
+    background: darken($c-button-week2, 5);
+    box-shadow: 0 1px 0px 0 rgba($fluid-prime-orange, 0.25);
+  }
+}
+
+%tealbuttons {
+  background: $c-button;
+  &:focus {
+    background: lighten($c-button, 5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    color: $c-link-hover;
+  }
+  &:active {
+    background: darken($c-button, 5);
+    box-shadow: 0 1px 0px 0 rgba($fluid-prime-teal, 0.25);
+  }
+}
 [id^="ff2019"] {
   @extend %fluidfeststyle;
   background-color: $white;
@@ -219,32 +247,21 @@
   .sqs-block-button-element--small.sqs-block-button-element,
   .sqs-editable-button,
   .lightbox-handle.sqs-system-button.sqs-editable-button {
-    background-color: $c-button-week2;
-    &:hover,
-    &:focus {
-      //todo
-      background: lighten($c-button-week2, 5);
-      box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-      transform: translateY(-2px);
-      transition: all 0.25s 0s ease-out;
-      color: $c-link-hover;
-    }
-    &:active {
-      background: darken($c-button-week2, 5);
-      box-shadow: 0 1px 0px 0 rgba($fluid-prime-orange, 0.25);
-      transform: translate3d(0, 2px, 0);
-      transition: all 0.025s 0s ease-out;
-    }
+    @extend %allbuttons;
+    @extend %orangebuttons;
   }
 }
 
 #block-yui_3_17_2_1_1565335709531_4810,
-#block-fb5b86e1fa5264ec10cd {
+#block-fb5b86e1fa5264ec10cd,
+#block-yui_3_17_2_1_1567050902431_20644,
+#block-yui_3_17_2_1_1567058413576_4682 {
   @media screen and (max-width: $tablet) {
     //hide horizontal image on mobile
     display: none !important;
   }
 }
+
 //hide verticle image on desktop
 @media screen and (min-width: $tablet + 1) {
   #block-yui_3_17_2_1_1565153504851_4966,
@@ -259,6 +276,14 @@
   width: auto;
 }
 
+#block-yui_3_17_2_1_1567050902431_6133 {
+  display: none;
+}
+/*
+#block-yui_3_17_2_1_1567050902431_20644 .thumb-image.loaded {
+
+}
+*/
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);

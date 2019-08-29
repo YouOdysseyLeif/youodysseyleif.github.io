@@ -18,7 +18,7 @@ hr.invisible {
   display: none;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 705px) {
   hr.invisible {
     display: block;
   }
@@ -35,6 +35,7 @@ hr.visible {
 }
 
 a.btn {
+  background: #0ba2a8;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
@@ -46,15 +47,6 @@ a.btn {
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
-  background: #0ba2a8;
-}
-
-a.btn.btn-teal {
-  background: #0ba2a8;
-}
-
-a.btn.btn-orange {
-  background: #e17828;
 }
 
 .no-touch a.btn:hover {
@@ -76,10 +68,6 @@ a.btn:active {
           transform: translate3d(0, 1px, 0);
   -webkit-transition: all 0.025s 0s ease-out;
   transition: all 0.025s 0s ease-out;
-}
-
-a.btn.btn-orange {
-  background: #e17828;
 }
 
 a.date-btn {
@@ -119,35 +107,44 @@ div.cards .card {
   background: #ffffff;
   display: inline-block;
   margin: 5px;
+  max-width: calc(90vw / 4);
+  max-width: 255px;
   position: relative;
   text-align: left;
   -webkit-transition: all 0.3s 0s ease-in;
   transition: all 0.3s 0s ease-in;
   z-index: 1;
-  max-width: 265px;
-  min-width: 216px;
-}
-
-@media screen and (min-width: 794px) and (max-width: 1123px) {
-  .card {
-    max-width: 29vw;
+  /*
+  @media screen and (min-width: 1041px) {
+    max-width: 22vw;
   }
-}
-
-@media screen and (min-width: 694px) and (max-width: 793px) {
-  .card {
-    max-width: 45vw;
+    @media screen and (min-width: 706px) and (max-width: 1040px) {
+    max-width: 35vw;
   }
+  */
 }
 
-@media screen and (max-width: 693px) {
+@media screen and (max-width: 705px) {
   .card {
-    max-width: 96vw;
+    max-width: 92vw;
   }
 }
 
 .card img {
-  width: 100%;
+  max-width: 255px;
+  /*@media screen and (min-width: 1041px) {
+      max-width: 22vw;
+    }
+        @media screen and (min-width: 706px) and (max-width: 1040px) {
+      max-width: 35vw;
+    }
+    */
+}
+
+@media screen and (max-width: 705px) {
+  .card img {
+    max-width: 92vw;
+  }
 }
 
 .card .view {
@@ -160,6 +157,7 @@ div.cards .card {
   position: relative;
   z-index: 0;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card .card-title a.toggle-info {
@@ -172,8 +170,8 @@ div.cards .card {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  -webkit-transform: translate(6px, -78px);
-          transform: translate(6px, -78px);
+  -webkit-transform: translate(6px, -49px);
+          transform: translate(6px, -49px);
   z-index: 20;
 }
 
@@ -200,33 +198,35 @@ div.cards .card {
           transform: rotate(-45deg);
 }
 
-.card .card-title strong {
+.card strong {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-.card .card-title strong small {
-  padding-top: 3px;
-  font-size-adjust: 0.8rem;
-  line-height: 0.2rem;
-  text-overflow: ellipsis;
+.card strong small {
+  display: block;
+  font-size: 14;
 }
 
-.card .card-description {
+.card strong small p {
+  line-height: 0.2;
+}
+
+.card div.card-description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
 }
 
-.card .card-actions {
-  padding: 10px 15px 20px;
-  text-align: center;
+.card div.card-actions {
   -webkit-box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.075);
           box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
 }
 
-.card .card-flap {
+.card div.card-flap {
   background: #003539;
   position: absolute;
   width: 100%;
@@ -236,21 +236,14 @@ div.cards .card {
           transform: rotateX(-90deg);
 }
 
-.card .flap1 {
+.card div.flap1 {
   -webkit-transition: all 0.3s 0.3s ease-out;
   transition: all 0.3s 0.3s ease-out;
   z-index: -1;
   background: #00c3d2;
-  -webkit-box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.075);
-          box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.075);
 }
 
-.card .flap1 ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.card .flap2 {
+.card div.flap2 {
   -webkit-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
   z-index: -2;
@@ -286,10 +279,6 @@ div.cards .card {
   left: 10px;
 }
 
-.card.show .card-title small p {
-  word-wrap: break-word !important;
-}
-
 .card.show div.card-flap {
   background: rgba(255, 255, 255, 0.95);
   -webkit-transform: rotateX(0deg);
@@ -305,4 +294,4 @@ div.cards .card {
   -webkit-transition: all 0.3s 0.2s ease-out;
   transition: all 0.3s 0.2s ease-out;
 }
-/*# sourceMappingURL=schedule2.css.map */
+/*# sourceMappingURL=schedule2-stash.css.map */

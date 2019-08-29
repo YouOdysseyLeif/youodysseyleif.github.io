@@ -13,8 +13,7 @@
 
 <!-- ---------------------- begin cut and paste here ----------------------- -->
 <!-- ----------------------------------------------------------------------- -->
-<!--           fluid show display with more info on touch or click           -->
-<!-- ----------------------------------------------------------------------- -->
+<!--fluid show schedule-->
   <div class="fluidcal">
 <!-- --------- to filter divs based on class id related to day-id ---------- -->
     <div class="date-picker">
@@ -22,6 +21,7 @@
       <hr class="visible"/>
       <div class="date-choose">
         <a class="btn date-btn active showall" data-filter="card">Show All</a>
+        <a class="btn date-btn" data-filter="free">Free Events</a>
         <hr class="mobile-break invisible"/>
         <a class="btn date-btn" data-filter="oct4">4</a>
         <a class="btn date-btn" data-filter="oct15">15</a>
@@ -29,12 +29,14 @@
         <a class="btn date-btn" data-filter="oct17">17</a>
         <a class="btn date-btn" data-filter="oct18">18</a>
         <a class="btn date-btn" data-filter="oct19">19</a>
+        <hr class="mobile-break invisible"/>
+        <a class="btn date-btn" data-filter="oct20">20</a>
         <a class="btn date-btn" data-filter="oct22">22</a>
         <a class="btn date-btn" data-filter="oct23">23</a>
         <a class="btn date-btn" data-filter="oct24">24</a>
         <a class="btn date-btn" data-filter="oct25">25</a>
         <a class="btn date-btn" data-filter="oct26">26</a>
-        <a class="btn date-btn" data-filter="oct27">27</a>     
+        <a class="btn date-btn" data-filter="oct27">27</a>
       </div>
     </div>
 <!-- ---------------------- The individual show cards ---------------------- -->
@@ -43,12 +45,12 @@
     <div id="eventcards" class="cards">
 <!-- ----------------------------- begin card ------------------------------ -->
       <div class="card pass" data-event="4-pack">
-          <img class="card__image" src="https://source.unsplash.com/500x500/?pack" alt="4-Pack" />
+          <img class="card__image" src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062590354-Y7426DXM61U5GLK84UZ9/4pack_teal.png?format=500w&content-type=image%2Fpng" alt="4-Pack" />
           <div class="card-title">
 
 <!-- ------------------ creates the little circle button ------------------- -->
 <!-- ---------------- to toggle viewing the additional info ---------------- -->
-            <a href="#" class="toggle-info btn">
+            <a href="#" class="toggle-info btn btn-orange">
                 <span class="left"></span>
                 <span class="right"></span>
             </a>
@@ -70,7 +72,7 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a class="ticket btn" href="#4-pack">Buy a 4-Pack</a>
+                  <a class="ticket btn btn-teal" href="#4-pack">Buy a 4-Pack</a>
                   </div>
               </div>
           </div>
@@ -78,12 +80,12 @@
 <!-- ---------------------------- end of a card ---------------------------- -->
 
       <div class="card pass" data-event="fluid-pass">
-          <img class="card__image" src="https://source.unsplash.com/500x500/?pass" alt="Festival Pass" />
+          <img class="card__image" src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062590443-839IZDV9RXRVBV9JKBSA/FestivalPass_teal.png?format=500w&content-type=image%2Fpng" alt="Festival Pass" />
           <div class="card-title">
 
 <!-- ------------------ creates the little circle button ------------------- -->
 <!-- ---------------- to toggle viewing the additional info ---------------- -->
-            <a href="#" class="toggle-info btn">
+            <a href="#" class="toggle-info btn btn-orange">
                 <span class="left"></span>
                 <span class="right"></span>
             </a>
@@ -105,18 +107,18 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a class="ticket btn" href="#pass">Get Your Pass</a>
+                  <a class="ticket btn btn-teal" href="#pass">Get Your Pass</a>
                   </div>
               </div>
           </div>
       </div>
       <div class="card oct4" data-event="event-0">
-          <img class="card__image" src="https://source.unsplash.com/500x500/?busy" alt="Sadonna image" />
+          <img class="card__image" src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062271187-4EJ76FNE2WW0RHVZ0LGB/MIGUELGUTIERREZ_showimage%28PERFORMANCE%29.jpg?format=500w&content-type=image%2Fjpeg" alt="Sadonna image" />
           <div class="card-title">
 
 <!-- ------------------ creates the little circle button ------------------- -->
 <!-- ---------------- to toggle viewing the additional info ---------------- -->
-            <a href="#" class="toggle-info btn">
+            <a href="#" class="toggle-info btn btn-teal">
                 <span class="left"></span>
                 <span class="right"></span>
             </a>
@@ -134,44 +136,46 @@
 <!-- --------------- begin the area that is initialy hidden ---------------- -->
           <div class="card-flap flap1">
               <div class="card-description">
-                (MONTREAL)  
+                <p>FLUID FEST LAUNCH <br />PERFORMANCE + PARTY</p>
+                <p><em>Co-presented with Calgary Queer Arts Society</em></p>  
                 <p>
                     SADONNA is exactly what it sounds like: sad versions of Madonna songs. In this music project, choreographer Miguel Gutierrez shows just how tiny the spiritual distance is between the international pop superstar, who grew up in Bay City, Michigan and himself, an international experimental itinerant artist who grew up in Colonia, New Jersey. Backed by the SLUTINOS, the Sad Latino Boys Backup Singers, SADONNA ekes out the melancholy cry for help hidden within Madonna’s uplifting lyrics.
                   </p>    
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event0">Tickets</a>
+                  <a href="/ff2019-week1-sadonna-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46321">Tickets</a>
                   </div>
               </div>
           </div>
       </div>
       
       <div class="card oct15" data-event="event-1">
-          <img class="card__image" src="https://source.unsplash.com/500x500/?gender" alt="Gender Defiance! Cabaret image" />
+          <img class="card__image" src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062786336-SK14JRL66XHXH6BYCWB3/Genderdefiancecabaret.png?format=500w&content-type=image%2Fpng" alt="Gender Defiance! Cabaret image" />
           <div class="card-title">
-            <a href="#" class="toggle-info btn">
+            <a href="#" class="toggle-info btn btn-teal">
                 <span class="left"></span>
                 <span class="right"></span>
             </a>
             <strong>
                 Gender Defiance! Cabaret
                 <small>
+                  <p class="artist">Calgary Artists &amp; National Guests</p>
                   <P class="when">Oct 15, 8pm</P>
                   <P class="venue">Dickens Pub</P>
-                  <p class="artist">VARIOUS ARTISTS</p></small>
+                  </small>
             </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                <p>Curated by Oliver Twirl</p>
-                <p>Calgary Artists & National Guests</p>
+                <p><em>Co-presented with Calgary Queer Arts Society</em></p>
+                <p>A night of gender defying grace and debauchery by and for gender diverse artists and performers. In partnership with Fluid Festival; join Oliver Twirl and their fellow trans and non-binary aliens as they dance through the gender spectrum performing spectacles and feats that will Wow you and make you feel things you thought you couldn't. Be encouraged: if you're comfortable the whole time, we're not doing our job!</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event1">Tickets</a>
+                  <a href="/ff2019-week1-defiance-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46322">Tickets</a>
                   </div>
               </div>
           </div>
@@ -180,11 +184,11 @@
       <div class="card oct16 oct17" data-event="event-2">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?beauty"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061868175-O863JH68DW5N1CDJ97CB/BeautyofFallingapart_web.png?format=500w&content-type=image%2Fpng"
           alt="The Beauty of Falling Apart image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -199,18 +203,14 @@
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                (Netherlands/Banff)
                 <p>
-                  The Beauty of Falling Apart is a mental experiment through the body. An uncanny and yet seductively precise exercise in how two individuals strive to find trust, to inhabit the thin edge of being "just safe enough”.
-                </p>
-                <p>
-                  What happens when nature becomes a threat? This question forms the theme of The Beauty of Falling Apart by Hilde Elbers and Heather Ware.
+                  The Beauty of Falling Apart is a mental experiment through the body. An uncanny and yet seductively precise exercise in how two individuals strive to find trust, to inhabit the thin edge of being just &quot;safe enough&quot;.
                 </p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event2">Tickets</a>
+                  <a href="/ff2019-week1-beauty-half-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/45749">Tickets</a>
                   </div>
               </div>
             </div>
@@ -219,11 +219,11 @@
       <div class="card oct16 oct17" data-event="event-2">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?half"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061872389-XKNT2JL19PEDXUC521JC/TheOtherHalf_web.png?format=500w&content-type=image%2Fpng"
           alt="The Other Half image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -237,18 +237,14 @@
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                (Vancouver)
                 <p>
-                  A new work from Action at a Distance created by and performed by collaborators Vanessa Goodman, Belinda McGuire and lighting designer James Proudfoot.
-                </p>
-                <p>
-                  It was half their lifetimes ago that Goodman and McGuire last danced together while growing up in Toronto. Collaborating now after 18 years apart, they revisit the shared muscle memory of their youth as a starting point to create a new duet that views their physicality through the prism of an immune system. The shared antibodies of their past fuse with a new collection of pathogens to play off the harmony and conflict of two bodies as familiar with one another as they are foreign. By working to see the world through each other's eyes in "The Other Half" they find ways to re- compose and re-experience what it is like to be one another.
+                  It was half their lifetimes ago that Goodman and McGuire last danced together while growing up in Toronto. Collaborating now after 18 years apart, they revisit the shared muscle memory of their youth as a starting point to create a new duet that views their physicality through the prism of an immune system.
                 </p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event2">Tickets</a>
+                  <a href="/ff2019-week1-beauty-half-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/45749">Tickets</a>
                   </div>
               </div>
             </div>
@@ -257,11 +253,11 @@
       <div class="card oct18" data-event="event-4">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?acorn"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061868481-5SO274X8F9OST87A0737/HINKYPUNK_web.png?format=500w&content-type=image%2Fpng"
           alt="HINKYPUNK image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -282,8 +278,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event4">Tickets</a>
+                  <a href="/ff2019-week1-hinkypunk-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46324">Tickets</a>
                   </div>
               </div>
             </div>
@@ -292,11 +288,11 @@
       <div class="card oct18 oct19" data-event="event-3">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?tour"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061869448-BC6Z8HLLUG4QU56D2PB3/RoadTrip_web.png?format=500w&content-type=image%2Fpng"
           alt="Red Rover Tour: Road Trip image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -320,8 +316,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event3">Tickets</a>
+                  <a href="/ff2019-week1-redrover-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46323">Tickets</a>
                   </div>
               </div>
             </div>
@@ -330,11 +326,11 @@
       <div class="card oct18 oct19" data-event="event-3">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?genius"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061870131-2OVL40JJKXIXFUD6W02A/Iamagenius_web.png?format=500w&content-type=image%2Fpng"
           alt="I AM A GENIUS does anyone here know me? image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -359,8 +355,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event3">Tickets</a>
+                  <a href="/ff2019-week1-redrover-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46323">Tickets</a>
                   </div>
               </div>
             </div>
@@ -369,11 +365,11 @@
       <div class="card oct18" data-event="event-5">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?ball"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062786184-AH1ZSP2RN7BIVHO0AJW0/Fluidkikiball.png?format=500w&content-type=image%2Fpng"
           alt="Fluid Kiki Ball image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -388,19 +384,13 @@
           <div class="card-flap flap1">
               <div class="card-description">
                   <p>
-                    The “Fluid Kiki Ball” is a collaboration with Ralph Escamillan, artist and founder of Van Vogue Jam, and VogueYYC.
-                  </p>
-                  <p>
-                    Vogue and Ballroom culture emerged in the 1930s and 40s in New York City, birthed by the Black and Latinx LGBTQ2S+ community who were excluded from the pageant world of white America. The development of the Ballroom scene created safe and inclusive spaces for these communities to explore and experience life styles from which they were excluded due to systemic oppression.
-                  </p> 
-                  <p>
-                    A BALL is an event that hosts a series of competitive categories, each with their own focus. Having been birthed in NYC by communities of Queer Black and Latinx people out of a need for safe nightlife spaces due to the discrimination they faced, balls are typically centered around creating safe space for LGBTQIA2+ POC.
+                    A collaboration with Ralph Escamillan, artist and founder of Van Vogue Jam, and VogueYYC.
                   </p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event5">Tickets</a>
+                  <a href="/ff2019-week1-fluid-kiki-ball-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46649">Tickets</a>
                   </div>
               </div>
             </div>
@@ -409,11 +399,11 @@
       <div class="card oct19 free" data-event="event-6">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?fish"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061874421-69OJYSLMRP97HWTFNQAJ/TonameanOther_web.png?format=500w&content-type=image%2Fpng"
           alt="To Name An Other image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -427,9 +417,8 @@
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  (New York)
                   <p>
-                    To Name An Other is special performance, part of Jeffrey Gibson’s exhibition Time Carriers at Esker Foundation showing until December 20, 2019.
+                    <em>Co-presented with the Esker Foundation.</em>
                   </p>
                   <p>
                     50 volunteer performers who self-identify as a person of color, LGBTQ, and/or Indigenous or Native Americans are brought together for a drumming event to give names to our current political climate.
@@ -437,8 +426,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event6">Free Event</a>
+                  <a href="/ff2019-week1-to-name-an-other-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46325">Free Event</a>
                   </div>
               </div>
             </div>
@@ -447,11 +436,11 @@
       <div class="card oct19" data-event="event-7">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?split"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061870617-577O73YC0ZV3MXP52WPS/Split_web.png?format=500w&content-type=image%2Fpng"
           alt="Split image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-teal">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -465,16 +454,14 @@
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                (Australia)
-                <p>CO-PRESENTED WITH ESKER FOUNDATION</p>  
                 <p>
                   Revelling in Lucy Guerin’s sharp, elegant choreographic investigations, Split (2017) reflects the dilemmas of negotiating with oneself and others in a world of increased pressure and reduced resources.
                 </p>   
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event7">Tickets</a>
+                  <a href="/ff2019-week1-split-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46326">Tickets</a>
                   </div>
               </div>
             </div>
@@ -483,11 +470,11 @@
       <div class="card oct22" data-event="event-8">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?space"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063993026-MLT9O9WH7J2KP2CA72S2/SpacewhereyouLiveIDream.png?format=500w&content-type=image%2Fpng"
           alt="The Space Where You Dream &amp; I Live image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -501,7 +488,6 @@
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                (Calgary)
                 <p>Are we humans as different as animals captured in a zoo?</p>
                 <p>
                   The Space Where You Dream and I Live explores the relationship between audience-spectators and performers-captured animals.
@@ -509,8 +495,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event8">Tickets</a>
+                  <a href="/ff2019-week2-the-space-oblivion-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46327">Tickets</a>
                   </div>
               </div>
             </div>
@@ -523,7 +509,7 @@
           alt="oblivion image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
@@ -551,8 +537,8 @@
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event8">Tickets</a>
+                  <a href="/ff2019-week2-the-space-oblivion-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46327">Tickets</a>
                   </div>
               </div>
             </div>
@@ -561,29 +547,63 @@
       <div class="card oct23 oct24" data-event="event-9">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?pour"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063991259-B7J0CGZ41K4MFZ8F7YQM/Pour.png?format=500w&content-type=image%2Fpng"
           alt="Pour image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             Pour
             <small>
-                  <span class="when">Oct 23 &amp; 24, 8:00pm</span>
-                  <span class="venue">DJD</span></small>
+              <p class="artist">Daina Ashbee</p>
+              <p class="when">Oct 23 &amp; 24, 8:00pm</p>
+              <p class="venue">DJD</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  This is a blurb about the show    
+                <p>Daina Ashbee confronts her audiences with yet another dark and powerful piece about women. She explores the vulnerabilities and strengths of bodies layered with pain and littered with social oppression. Yet, layers of joy and celebration pierce through the tension providing for a liberating and transformative experience like no other.</p>   
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event9">Tickets</a>
+                  <a href="/ff2019-week2-pour-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46328">Tickets</a>
+                  </div>
+              </div>
+            </div>
+      </div>
+     
+      <div class="card oct23" data-event="event-10">
+        <img
+          class="card__image"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063997089-N6YLH04WUWM0WOV52QEP/TalkingTruths_Jessica.png?format=500w&content-type=image%2Fpng"
+          alt="Talking Truths: Performances image"
+        />
+        <div class="card-title">
+          <a href="#" class="toggle-info btn btn-orange">
+            <span class="left"></span>
+            <span class="right"></span>
+          </a>
+          <strong>
+            iihksiisiinatsiistostiimao nipaitapiitsiin
+            <small>
+              <p class="artist">Jessica McMann</p>
+              <p class="when">Oct 23 7:30pm</p>
+              <p class="venue">cSpace</p></small>
+          </strong>
+        </div>
+          <div class="card-flap flap1">
+              <div class="card-description">
+                <p>Part of a double bill program with Olivia C. Davies.</p>
+                <p>Cree dance artist and musician Jessica McMann’s <strong>iihksiisiinatsiistostiimao nipaitapiitsiin</strong> is an excerpt of a 60-minute solo. Using the essence of Indigenous storytelling ways, Jessica brings the audience into an alternate time scape to experience adoption and the subsequent internal landscape of violence. The audience witnesses this journey through healing and cultural experiences.</p>
+              </div>
+              <div class="card-flap flap2">
+                  <div class="card-actions">
+                  <a href="/ff2019-week2-talking-truths-performance-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46650">Tickets</a>
                   </div>
               </div>
             </div>
@@ -592,61 +612,67 @@
       <div class="card oct23" data-event="event-10">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?indigenous"
-          alt="Indigenous Women image"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063998166-RVGLDEL0GQXREUAUVOA4/Talkingtruths_Olivia.png?format=500w&content-type=image%2Fpng"
+          alt="Talking Truths: Performances image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
-            Indigenous Women
+            The Wind That Takes Us
             <small>
-                  <span class="when">Oct 23 &amp; 24, 8:00pm</span>
-                  <span class="venue">DJD</span></small>
+              <p class="artist">Olivia C. Davies</p>
+              <p class="when">Oct 23 7:30pm</p>
+              <p class="venue">cSpace</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  This is a blurb about the show    
+                <p>Part of a double bill program with Jessica McMann.</p>
+                <p>Creating new ceremonies based on the traces mother nature makes, a woman is carried by the wind and grounded by the earth beneath her feet. <strong>The Wind That Takes Us</strong> is an excerpt from the full-length work, Gidaashi, by Olivia C. Davies and Melissa Frost.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event10">Tickets</a>
+                  <a href="/ff2019-week2-talking-truths-performance-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46650">Tickets</a>
                   </div>
               </div>
             </div>
       </div>
 
-      <div class="card oct23" data-event="event-11">
+      <div class="card oct23 free" data-event="event-11">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?truths"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063998549-YLQ837F9JRN0ZH6CTQ3B/TalkingTruths.png?format=500w&content-type=image%2Fpng"
           alt="Talking Truths: Community connections through Indigenous Dance image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
-            Talking Truths
+            Talking Truths: Community connections
             <small>
-                  <span class="when">Oct 23 &amp; 24, 8:00pm</span>
-                  <span class="venue">DJD</span></small>
+              <p class="artist">Olivia C. Davies, Jessica McMann & local guests</p>
+              <p class="when">Oct 23 &amp; 24, 8:30pm</p>
+              <p class="venue">cSpace</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
                   <strong>Talking Truths: Community connections through Indigenous Dance</strong>
-                  this is a blurb about the show.
+                  <p>A gathering centering the indigenous female creative voice. Everyone is invited to listen and participate.</p>
+                  <p>
+                    An embodied conversation. An exchange between four Indigenous artists in conversation with community. The featured artists use traditional and contemporary dance to share meaningful stories and cultivate connection in and for their communities. 
+                  </p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event11">Tickets</a>
+                  <a href="/ff2019-week2-talking-truths-community-connections-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46360">Free Event</a>
                   </div>
               </div>
             </div>
@@ -655,30 +681,31 @@
       <div class="card oct24 oct26" data-event="event-12">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?cabaret"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063990180-RISL9WB5FDDWKP8X5VXD/Physicaltherapy.png?format=500w&content-type=image%2Fpng"
           alt="Physical Therapy Cabaret image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             Physical Therapy Cabaret
             <small>
-                  <span class="when">Oct 24 &amp; 26, 9:00pm</span>
-                  <span class="venue">DJD Living Room</span></small>
+              <p class="artist">Calgary Artists &amp; National Guests</p>
+              <p class="when">Oct 24 &amp; 26, 9:00pm</p>
+              <p class="venue">DJD Living Room</p>
+              </small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>Calgary Artists and National Guests</strong>
-                  Gunna Be good!
+                  <p>Gloriously bound by a small space and unlimited imagination, the Physical Therapy Cabaret invites Calgary artists and national guests to share whimsical and irreverent performance. This is a not-to-be missed night of tiny stage spectacle and controlled chaos that you can’t prepare for, where audiences can expect the unexpected. Pull up a chair in our festival lounge for a cocktail of physical surprise.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event12">Tickets</a>
+                  <a href="#" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="#event12">Tickets</a>
                   </div>
               </div>
             </div>
@@ -687,30 +714,32 @@
       <div class="card oct25 oct26" data-event="event-13">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?thaw"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063998942-ZJDBZNUPQ1FBAM1A7M2A/Thaw.png?format=500w&content-type=image%2Fpng"
           alt="thaw image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             thaw
             <small>
-                  <span class="when">Oct 25 &amp; 26, 7:30pm</span>
-                  <span class="venue">cSpace</span></small>
+              <p class="artist">Zahra Shahab</p>
+              <p class="when">Oct 25 &amp; 26, 7:30pm</p>
+              <p class="venue">cSpace</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>Calgary Artists and National Guests</strong>
-                  Gunna Be good!
+                  (Vancouver)
+                  <p><strong>Part of a triple bill with Erin Ball and Future Leisure</strong></p>
+                  <p>thaw is a solo about the liminal spaces between identities. It is a search for morphological transformation of the characters that surface in the body. Allowing the fantastical to create room for unstable narratives, thaw is about suspending oneself in a state of flux and finding the jagged alchemy that occurs there.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event13">Tickets</a>
+                  <a href="/ff2019-week2-triple-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46362">Tickets</a>
                   </div>
               </div>
             </div>
@@ -719,30 +748,33 @@
       <div class="card oct25 oct26" data-event="event-13">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?extended"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567064001605-9KX3O1GCBYFHE4N0KKH7/ExtendedbodyV2.png?format=500w&content-type=image%2Fpng"
           alt="Extended Body image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             Extended Body
             <small>
-                  <span class="when">Oct 25 &amp; 26, 7:30pm</span>
-                  <span class="venue">cSpace</span></small>
+              <p class="artist">Erin Ball</p>
+              <p class="when">Oct 25 &amp; 26, 7:30pm</p>
+              <p class="venue">cSpace</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>Part of a triple bill?</strong>
-                  So fancy
+                  (Kingston)
+                  <p><strong>Part of a triple bill with Zahra Shahab and Future Leisure</strong></p>
+                  <p><em>Co-presented with Inside Out Theatre</em></p>
+                  <p>Extended Body explores movement and sound with various mobility devices and extensions or lack thereof, of Erin Ball’s physical body.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event13">Tickets</a>
+                  <a href="/ff2019-week2-triple-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46362">Tickets</a>
                   </div>
               </div>
             </div>
@@ -751,30 +783,32 @@
       <div class="card oct25 oct26" data-event="event-13">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?fantasies"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567064009910-FES84TBLJ4SAVX6XH47Z/Nomorefantasies.png?format=500w&content-type=image%2Fpng"
           alt="No More Fantasies image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             No More Fantasies
             <small>
-                  <span class="when">Oct 25 &amp; 26, 7:30pm</span>
-                  <span class="venue">cSpace</span></small>
+              <p class="artist">Future Leisure</p>
+              <p class="when">Oct 25 &amp; 26, 7:30pm</p>
+              <p class="venue">cSpace</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>Part of a triple bill?</strong>
-                  Gunna Be good!
+                  (Vancouver)
+                  <p><strong>Part of a triple bill with Zahra Shahab and Erin Ball.</strong></p>
+                  <p>Corrupting the form of 'pas de deux' by employing a utilitarian approach to physical interaction, the limits of two female bodies is displayed unadorned; the shake of muscles in contraction, the watery movement of released limbs.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event13">Tickets</a>
+                  <a href="/ff2019-week2-triple-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46362">Tickets</a>
                   </div>
               </div>
             </div>
@@ -783,62 +817,69 @@
       <div class="card oct25 oct26" data-event="event-14">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?running"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567063992102-1VZSQCK549GX4VMSIKI5/RunningPiece.png?format=500w&content-type=image%2Fpng"
           alt="Running Piece image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             Running Piece
             <small>
-                  <span class="when">Oct 25 &amp; 26, 8:00pm</span>
-                  <span class="venue">DJD</span></small>
+              <p class="artist">Jacques Poulin-Denis / Grand Poney</p>
+              <p class="when">Oct 25 &amp; 26, 8:00pm</p>
+              <p class="venue">DJD</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>Part of a triple bill?</strong>
-                  Gunna Be good!
+                  <p>Running Piece is a work for dancer and treadmill. On this confined yet infinite space, a man travels without leaving, constantly forced to go forward. He moves through the situations and moments that define us. On the path of humanity and civilization, or on the transit to work, we are the high hope joggers, the overly capable multi-taskers, the compulsive lateness sufferers. Running Piece substantiates our proneness to constantly chase our tails and our pursuit for the divine sublimity of busyness.</p>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#event14">Tickets</a>
+                  <a href="/ff2019-week2-running-piece-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46363">Tickets</a>
                   </div>
               </div>
             </div>
       </div>
 
-      <div class="card oct27" data-event="event-15">
+      <div class="card oct27 free" data-event="event-15">
         <img
           class="card__image"
-          src="https://source.unsplash.com/500x500/?library"
+          src="https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567064003509-ANV0W1DIFYO8ZTQM9ZP9/Library.png?format=500w&content-type=image%2Fpng"
           alt="Fluid Fest at the Central Library image"
         />
         <div class="card-title">
-          <a href="#" class="toggle-info btn">
+          <a href="#" class="toggle-info btn btn-orange">
             <span class="left"></span>
             <span class="right"></span>
           </a>
           <strong>
             Fluid Fest at the Central Library
             <small>
-                  <span class="when">Oct 27, noon to 4:00pm</span>
-                  <span class="venue">Central Library</span></small>
+                  <p class="when">Oct 27, noon to 4:00pm</p>
+                  <p class="venue">Central Library</p>
+                  <p>A Free Family Friendly</p></small>
           </strong>
         </div>
           <div class="card-flap flap1">
               <div class="card-description">
-                  <strong>It's with so many books!</strong>
-                  Probably should have artists info
+                <p><strong>FREE - Family Friendly Event</strong></p>
+                <p>A series of pop-up physical performances</p>
+                Featuring:
+                <ul>
+                  <li>BARBARA ENGLAND (CALGARY)</li>
+                  <li>JULIE FUNK (CALGARY)</li>
+                  <li>ANASTASSIIA MOUSSATOVA (CALGARY)</li>
+                </ul>
               </div>
               <div class="card-flap flap2">
                   <div class="card-actions">
-                  <a href="#" class="btn">Read more</a>
-                  <a class="ticket btn" href="#">FREE!</a>
+                  <a href="/ff2019-week2-fluid-fest-at-the-library-index" class="btn btn-teal">Read more</a>
+                  <a class="ticket btn btn-teal" href="https://fluidfest.simpletix.com/e/46403">Free Event</a>
                   <p>no ticket necessary</p>
                   </div>
               </div>
