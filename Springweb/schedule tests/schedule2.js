@@ -2,6 +2,16 @@ $(document).ready(function() {
   var zindex = 10;
 
   $("div.card").click(function(e) {
+    if ($(e.target).hasClass("readmore")) {
+      var gotourl = event.target.href;
+      window.location.href = gotourl;
+      return false;
+    }
+    if ($(e.target).hasClass("ticket")) {
+      var gotourl = event.target.href;
+      window.open(gotourl);
+      return false;
+    }
     e.preventDefault();
 
     var isShowing = false;
@@ -51,3 +61,8 @@ $(document).ready(function() {
       .fadeIn(450);
   });
 });
+
+//console.log(
+//  $(e.target).hasClass("readmore") || $(e.target).hasClass("ticket")
+//);
+//console.log(event.target.href);

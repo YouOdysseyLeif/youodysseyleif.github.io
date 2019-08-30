@@ -1,21 +1,31 @@
 /* Begin Fluid Fest CSS*/
+/*
 @font-face {
   font-family: futura-bt-medium;
-  src: local("futura-md-bt-medium"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610aa82811800015283f7/1564872874239/futura-md-bt-medium.ttf);
+  src: local("Futura Md Bt Medium"),
+    local("futura-md-bt-medium"),
+    url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610aa82811800015283f7/1564872874239/futura-md-bt-medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+@font-face {
+  font-family: futura-bt-medium-italic;
+  src: local("Futura Md Bt Medium Italic"), local("futura-md-bt-medium-italic"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d6870947b0b7f0001b60268/1567125653080/futura-md-bt-medium-italic.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: futura-bt-bold;
-  src: local("futura-bold-bt"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610be8281180001528518/1564872894875/futura-bold-bt.ttf);
+  src: local("Futura Bold Bt"), local("futura-bold-bt"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610be8281180001528518/1564872894875/futura-bold-bt.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: futura-bt-heavy;
-  src: local("futura-hv-bt-heavy.ttf"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610c66069a60001f0d438/1564872902647/futura-hv-bt-heavy.ttf);
+  src: local("Futura Hv Bt Heavy"), local("futura-hv-bt-heavy"), url(https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d4610c66069a60001f0d438/1564872902647/futura-hv-bt-heavy.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -33,11 +43,19 @@
   font-size: 1em;
 }
 
-[id^="ff2019"] strong {
+[id^="ff2019"] strong,
+[id^="ff2019"] b {
   font-family: futura-bt-bold, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
+}
+
+[id^="ff2019"] em,
+[id^="ff2019"] i {
+  font-family: futura-pt;
+  font-weight: 400;
+  font-style: italic;
 }
 
 [id^="ff2019"] h1, [id^="ff2019"] h2, [id^="ff2019"] h3 {
@@ -48,7 +66,7 @@
 
 @media screen and (max-width: 480px) {
   [id^="ff2019"] h1, [id^="ff2019"] h2, [id^="ff2019"] h3 {
-    font-size-adjust: 0.7;
+    font-size-adjust: 0.7rem;
   }
 }
 
@@ -69,7 +87,7 @@
 [id^="ff2019"] h2 {
   font-family: futura-bt-bold, sans-serif;
   color: #104e52;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 [id^="ff2019"] h3 {

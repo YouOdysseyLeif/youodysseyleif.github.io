@@ -15,7 +15,7 @@ $tealShade: #007c85;
 $charcoal: #404040;
 
 .fluidcal {
-  padding-bottom: 20em;
+  padding-bottom: 25em;
 }
 
 .datepicker {
@@ -56,7 +56,6 @@ a.btn {
   position: relative;
   text-decoration: none;
   transition: all 0.1s 0s ease-out;
-  background: $teal;
   &.btn-teal {
     background: $teal;
   }
@@ -85,6 +84,7 @@ a.btn.btn-orange {
 }
 
 a.date-btn {
+  background: $teal;
   min-width: 1.25rem;
   text-align: center;
   &.active {
@@ -122,7 +122,7 @@ div.cards {
   text-align: left;
   transition: all 0.3s 0s ease-in;
   z-index: 1;
-  max-width: 265px;
+  max-width: 255px;
   min-width: 216px;
   @media screen and (min-width: 794px) and (max-width: 1123px) {
     max-width: 29vw;
@@ -183,14 +183,13 @@ div.cards {
     strong {
       margin: 0;
       padding: 0;
-      font-size: 16px;
-
-      small {
-        padding-top: 3px;
-        font-size-adjust: 0.8rem;
-        line-height: 0.2rem;
-        text-overflow: ellipsis;
-      }
+      font-size: 15px;
+    }
+    small {
+      padding-top: 3px;
+      font-size-adjust: 0.8rem;
+      line-height: 0.2rem;
+      text-overflow: ellipsis;
     }
   }
 
@@ -244,7 +243,6 @@ div.cards {
 
   .card-title {
     a.toggle-info {
-      background: $orange !important;
       span {
         top: 15px;
       }
@@ -253,6 +251,12 @@ div.cards {
       }
       span.right {
         left: 10px;
+      }
+      &.btn-orange {
+        background: darken($teal, 5) !important;
+      }
+      &.btn-teal {
+        background: darken($orange, 5) !important;
       }
     }
     small p {

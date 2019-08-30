@@ -1,5 +1,5 @@
 .fluidcal {
-  padding-bottom: 20em;
+  padding-bottom: 25em;
 }
 
 .datepicker {
@@ -46,7 +46,6 @@ a.btn {
   text-decoration: none;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
-  background: #0ba2a8;
 }
 
 a.btn.btn-teal {
@@ -83,6 +82,7 @@ a.btn.btn-orange {
 }
 
 a.date-btn {
+  background: #0ba2a8;
   min-width: 1.25rem;
   text-align: center;
 }
@@ -124,7 +124,7 @@ div.cards .card {
   -webkit-transition: all 0.3s 0s ease-in;
   transition: all 0.3s 0s ease-in;
   z-index: 1;
-  max-width: 265px;
+  max-width: 255px;
   min-width: 216px;
 }
 
@@ -203,10 +203,10 @@ div.cards .card {
 .card .card-title strong {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-.card .card-title strong small {
+.card .card-title small {
   padding-top: 3px;
   font-size-adjust: 0.8rem;
   line-height: 0.2rem;
@@ -270,10 +270,6 @@ div.cards .card {
   background: #ffffff;
 }
 
-.card.show .card-title a.toggle-info {
-  background: #e17828 !important;
-}
-
 .card.show .card-title a.toggle-info span {
   top: 15px;
 }
@@ -284,6 +280,14 @@ div.cards .card {
 
 .card.show .card-title a.toggle-info span.right {
   left: 10px;
+}
+
+.card.show .card-title a.toggle-info.btn-orange {
+  background: #098b90 !important;
+}
+
+.card.show .card-title a.toggle-info.btn-teal {
+  background: #d26c1d !important;
 }
 
 .card.show .card-title small p {

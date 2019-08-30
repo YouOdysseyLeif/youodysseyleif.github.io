@@ -79,18 +79,25 @@
     font-style: normal;
     font-size: $basetext;
   }
-  strong {
+  strong,
+  b {
     font-family: $font-bold;
     font-weight: normal;
     font-style: normal;
     font-size: $basetext;
+  }
+  em,
+  i {
+    font-family: futura-pt;
+    font-weight: 400;
+    font-style: italic;
   }
   %headerfont {
     font-weight: normal;
     font-style: normal;
     text-transform: uppercase;
     @media screen and (max-width: $phone) {
-      font-size-adjust: 0.7;
+      font-size-adjust: 0.7rem;
     }
   }
   h1 {
@@ -252,12 +259,12 @@
   }
 }
 
+//hide horizontal image on mobile
 #block-yui_3_17_2_1_1565335709531_4810,
 #block-fb5b86e1fa5264ec10cd,
 #block-yui_3_17_2_1_1567050902431_20644,
 #block-yui_3_17_2_1_1567058413576_4682 {
   @media screen and (max-width: $tablet) {
-    //hide horizontal image on mobile
     display: none !important;
   }
 }
@@ -275,7 +282,7 @@
 #block-yui_3_17_2_1_1565256639647_8158 {
   width: auto;
 }
-
+// hide the hr line on fluid main page
 #block-yui_3_17_2_1_1567050902431_6133 {
   display: none;
 }
