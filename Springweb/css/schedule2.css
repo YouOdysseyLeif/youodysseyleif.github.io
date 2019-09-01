@@ -164,11 +164,8 @@ div.cards .card {
 
 .card .card-title a.toggle-info {
   height: 32px;
-  padding: 0;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
   width: 32px;
+  padding: 0;
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -210,7 +207,6 @@ div.cards .card {
   padding-top: 3px;
   font-size-adjust: 0.8rem;
   line-height: 0.2rem;
-  text-overflow: ellipsis;
 }
 
 .card .card-description {

@@ -145,16 +145,13 @@ div.cards {
     position: relative;
     z-index: 0;
     white-space: nowrap;
-    //box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.075);
-    //max-width: 12rem;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
 
     a.toggle-info {
       height: 32px;
-      padding: 0;
-      position: absolute;
-      right: 5px;
-      bottom: 5px;
       width: 32px;
+      padding: 0;
       position: absolute;
       right: 0px;
       bottom: 0px;
@@ -189,7 +186,6 @@ div.cards {
       padding-top: 3px;
       font-size-adjust: 0.8rem;
       line-height: 0.2rem;
-      text-overflow: ellipsis;
     }
   }
 
