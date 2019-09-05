@@ -2,6 +2,10 @@
 
 @import "global/variables";
 @import "modules/mixins";
+@import "global/buttons";
+@import "layout/week1";
+@import "layout/week2";
+@import "layout/landing";
 @import "layout/utility";
 
 /* general */
@@ -89,55 +93,7 @@
     font-size: 1.2rem;
   }
 }
-%allbuttons {
-  //todo
-  border-radius: 4px;
-  border: 0px;
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: $white;
-  display: inline-block;
-  padding: 6px 10px 8px;
-  margin: 5px;
-  position: relative;
-  text-decoration: none;
-  transition: all 0.1s 0s ease-out;
-  &:hover,
-  &:focus {
-    //todo
-    transform: translateY(-2px);
-    transition: all 0.25s 0s ease-out;
-  }
-  &:active {
-    transform: translate3d(0, 2px, 0);
-    transition: all 0.025s 0s ease-out;
-  }
-}
 
-%orangebuttons {
-  background: $c-button-week2;
-  &:focus {
-    background: lighten($c-button-week2, 5);
-    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-    color: $c-link-hover;
-  }
-  &:active {
-    background: darken($c-button-week2, 5);
-    box-shadow: 0 1px 0px 0 rgba($fluid-prime-orange, 0.25);
-  }
-}
-
-%tealbuttons {
-  background: $c-button;
-  &:focus {
-    background: lighten($c-button, 5);
-    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-    color: $c-link-hover;
-  }
-  &:active {
-    background: darken($c-button, 5);
-    box-shadow: 0 1px 0px 0 rgba($fluid-prime-teal, 0.25);
-  }
-}
 [id^="ff2019"] {
   @extend %fluidfeststyle;
   background-color: $white;
@@ -151,57 +107,6 @@
     strong {
       color: $fluid-teal-text;
     }
-  }
-}
-
-[id^="ff2019-festivbanner"] {
-  background-color: $fluid-prime-teal;
-  h1,
-  h2,
-  h3 {
-    color: $c-button-hover;
-  }
-  p {
-    color: $c-body-w2;
-  }
-  & figure.Index-page-image.loaded {
-    @media screen and (max-width: $tablet) {
-      //hide horizontal image on mobile
-      display: none !important;
-    }
-  }
-}
-
-[id^="ff2019-week1"] {
-  p {
-    color: $c-body-w2;
-  }
-}
-[id^="ff2019-week2"] {
-  p {
-    color: $c-body-w1;
-  }
-}
-[id^="ff2019-week1-banner"] {
-  background-color: $fluid-prime-orange;
-  height: 50vh;
-  h1,
-  h2 {
-    color: $fluid-prime-teal;
-  }
-  p {
-    color: $c-body-w2;
-  }
-}
-
-[id^="ff2019-week2-banner"] {
-  background-color: $fluid-prime-teal;
-  height: 50vh;
-  .sqs-block-button-element--small.sqs-block-button-element,
-  .sqs-editable-button,
-  .lightbox-handle.sqs-system-button.sqs-editable-button {
-    @extend %allbuttons;
-    @extend %orangebuttons;
   }
 }
 

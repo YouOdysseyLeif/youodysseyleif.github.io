@@ -1,0 +1,16 @@
+[id^="ff2019-week2"] {
+  p {
+    color: $c-body-w1;
+  }
+}
+
+[id^="ff2019-week2-banner"] {
+  background-color: $fluid-prime-teal;
+  height: 50vh;
+  .sqs-block-button-element--small.sqs-block-button-element,
+  .sqs-editable-button,
+  .lightbox-handle.sqs-system-button.sqs-editable-button {
+    @extend %allbuttons;
+    @extend %orangebuttons;
+  }
+}

@@ -1,0 +1,17 @@
+[id^="ff2019-week1"] {
+  p {
+    color: $c-body-w2;
+  }
+}
+
+[id^="ff2019-week1-banner"] {
+  background-color: $fluid-prime-orange;
+  height: 50vh;
+  h1,
+  h2 {
+    color: $fluid-prime-teal;
+  }
+  p {
+    color: $c-body-w2;
+  }
+}

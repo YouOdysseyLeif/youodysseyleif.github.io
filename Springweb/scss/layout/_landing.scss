@@ -1,0 +1,17 @@
+[id^="ff2019-festivbanner"] {
+  background-color: $fluid-prime-teal;
+  h1,
+  h2,
+  h3 {
+    color: $c-button-hover;
+  }
+  p {
+    color: $c-body-w2;
+  }
+  & figure.Index-page-image.loaded {
+    @media screen and (max-width: $tablet) {
+      //hide horizontal image on mobile
+      display: none !important;
+    }
+  }
+}
