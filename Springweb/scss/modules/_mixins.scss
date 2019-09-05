@@ -1,0 +1,63 @@
+// mixins
+// Convert illustrator, indesign and photoshop tracking into letter spacing.
+@function tracking($target) {
+  @return ($target / 1000) * 1em;
+}
+
+@mixin tracking($target) {
+  letter-spacing: tracking($target);
+}
+
+// might be able to use truncate for the "D" in fluid this year
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+} //Usage: @include transition(all, 0.2s, ease-in-out);
+
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity);
+}
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity);
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}

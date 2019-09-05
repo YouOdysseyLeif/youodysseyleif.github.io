@@ -1,70 +1,8 @@
 /* Begin Fluid Fest CSS*/
 
-// mixins
-// Convert illustrator, indesign and photoshop tracking into letter spacing.
-@function tracking($target) {
-  @return ($target / 1000) * 1em;
-}
-
-@mixin tracking($target) {
-  letter-spacing: tracking($target);
-}
-
-// might be able to use truncate for the "D" in fluid this year
-@mixin truncate($truncation-boundary) {
-  max-width: $truncation-boundary;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@mixin pseudo($display: block, $pos: absolute, $content: "") {
-  content: $content;
-  display: $display;
-  position: $pos;
-}
-
-@mixin transition($transition-property, $transition-time, $method) {
-  -webkit-transition: $transition-property $transition-time $method;
-  -moz-transition: $transition-property $transition-time $method;
-  -ms-transition: $transition-property $transition-time $method;
-  -o-transition: $transition-property $transition-time $method;
-  transition: $transition-property $transition-time $method;
-} //Usage: @include transition(all, 0.2s, ease-in-out);
-
-@function black($opacity) {
-  @return rgba(0, 0, 0, $opacity);
-}
-@function white($opacity) {
-  @return rgba(255, 255, 255, $opacity);
-}
-
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes $animation-name {
-    @content;
-  }
-  @-moz-keyframes $animation-name {
-    @content;
-  }
-  @-ms-keyframes $animation-name {
-    @content;
-  }
-  @-o-keyframes $animation-name {
-    @content;
-  }
-  @keyframes $animation-name {
-    @content;
-  }
-}
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
-
 @import "global/variables";
+@import "modules/mixins";
+@import "layout/utility";
 
 /* general */
 
@@ -142,8 +80,7 @@
     @extend %allbuttons;
     @extend %tealbuttons;
   }
-  hr {
-  }
+
   .sqs-block-button-element--medium.sqs-block-button-element {
     @extend %allbuttons;
     @extend %orangebuttons;
@@ -204,9 +141,16 @@
 [id^="ff2019"] {
   @extend %fluidfeststyle;
   background-color: $white;
-  .sqs-block-image.design-layout-collage.image-card,
-  .image-overlay {
-    background-color: rgba(0, 0, 0, 0);
+  .sqs-block-image .image-block-outer-wrapper.image-block-v2 .image-overlay {
+    background: #0ba2a8;
+    mix-blend-mode: color;
+  }
+  .sqs-block-image .design-layout-collage .image-card {
+    background-color: $fluid-prime-orange;
+    p,
+    strong {
+      color: $fluid-teal-text;
+    }
   }
 }
 
@@ -240,6 +184,7 @@
 }
 [id^="ff2019-week1-banner"] {
   background-color: $fluid-prime-orange;
+  height: 50vh;
   h1,
   h2 {
     color: $fluid-prime-teal;
@@ -251,6 +196,7 @@
 
 [id^="ff2019-week2-banner"] {
   background-color: $fluid-prime-teal;
+  height: 50vh;
   .sqs-block-button-element--small.sqs-block-button-element,
   .sqs-editable-button,
   .lightbox-handle.sqs-system-button.sqs-editable-button {
@@ -259,38 +205,6 @@
   }
 }
 
-//hide horizontal image on mobile
-#block-yui_3_17_2_1_1565335709531_4810,
-#block-fb5b86e1fa5264ec10cd,
-#block-yui_3_17_2_1_1567050902431_20644,
-#block-yui_3_17_2_1_1567058413576_4682 {
-  @media screen and (max-width: $tablet) {
-    display: none !important;
-  }
-}
-
-//hide verticle image on desktop
-@media screen and (min-width: $tablet + 1) {
-  #block-yui_3_17_2_1_1565153504851_4966,
-  #block-ebb42e46870ff0825577 {
-    display: none !important;
-  }
-}
-
-// widen the code black on the festival page
-
-#block-yui_3_17_2_1_1565256639647_8158 {
-  width: auto;
-}
-// hide the hr line on fluid main page
-#block-yui_3_17_2_1_1567050902431_6133 {
-  display: none;
-}
-/*
-#block-yui_3_17_2_1_1567050902431_20644 .thumb-image.loaded {
-
-}
-*/
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);

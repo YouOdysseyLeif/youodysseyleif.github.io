@@ -1,0 +1,1026 @@
+SADONNA
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Sadonna",
+  "startDate": "2019-10-03T20:00",
+  "endDate": "2019-10-03T23:59",
+  "location": {
+    "@type": "Place",
+    "name": "Dickens Pub",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1000 9 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2P 2Y6",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46321",
+    "price": "10-25",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Miguel Gutierrez"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GENDER DEFIANCE! CABARET
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Gender Defiance! Cabaret",
+  "startDate": "2019-10-15T20:00",
+  "endDate": "2019-10-15T21:00",
+  "location": {
+    "@type": "Place",
+    "name": "Dickens Pub",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1000 9 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2P 2Y6",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46322",
+    "price": "20",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Beauty of Falling Apart | The Other Half
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The Beauty of Falling Apart | The Other Half",
+  "startDate": "2019-10-16T20:00",
+  "endDate": "2019-10-16T21:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/45749",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RedRover Tour: Road Trip | I AM A GENIUS does anyone here know me?
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "RedRover Tour: Road Trip | I AM A GENIUS does anyone here know me?",
+  "startDate": "2019-10-18T19:30",
+  "endDate": "2019-10-18T21:00",
+  "location": {
+    "@type": "Place",
+    "name": "cSpace King Edward",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1721 29 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2T 6T7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46323",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HINKYPUNK
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "HINKYPUNK",
+  "startDate": "2019-10-18T20:00",
+  "endDate": "2019-10-18T21:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46324",
+    "price": "40",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Ralph Escamillan (Vancouver)"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fluid Kiki Ball
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Fluid Kiki Ball",
+  "startDate": "2019-10-18T21:30",
+  "endDate": "2019-10-18T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "Dickens Pub",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1000 9 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2P 2Y6",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46649",
+    "price": "10",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To Name An Other
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "To Name An Other",
+  "startDate": "2019-10-19T15:00",
+  "endDate": "2019-10-19T17:00",
+  "location": {
+    "@type": "Place",
+    "name": "Atlantic Avenue Art Block",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1011 9 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0H7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46325",
+    "price": "FREE",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Jeffrey Gibson (New York)"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Split
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Split",
+  "startDate": "2019-10-18T20:00",
+  "endDate": "2019-10-18T22:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46326",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Lucy Guerin (Australia)"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Space Where You Dream & I Live | oblivion 
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The Space Where You Dream & I Live | oblivion ",
+  "startDate": "2019-10-22T19:30",
+  "endDate": "2019-10-22T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "cSpace King Edward",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1721 29 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2T 6T7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46327",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pour
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Pour",
+  "startDate": "2019-10-23T20:00",
+  "endDate": "2019-10-23T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46328",
+    "price": "40",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Daina Ashbee (Montreal)"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Talking Truths: Performance
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Talking Truths: Performance",
+  "startDate": "2019-10-23T19:30",
+  "endDate": "2019-10-23T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "cSpace King Edward",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1721 29 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2T 6T7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46650",
+    "price": "25",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Talking Truths: Community connections through Indigenous Dance
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Talking Truths: Community connections through Indigenous Dance",
+  "startDate": "2019-10-23T20:30",
+  "endDate": "2019-10-23T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "cSpace King Edward",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1721 29 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2T 6T7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46650",
+    "price": "FREE",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Physical Therapy Cabaret
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Physical Therapy Cabaret",
+  "startDate": "2019-10-24T21:00",
+  "endDate": "2019-10-24T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46361",
+    "price": "20",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+thaw | Extended Body | No More Fantasies 
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "thaw | Extended Body | No More Fantasies ",
+  "startDate": "2019-10-25T19:30",
+  "endDate": "2019-10-25T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "cSpace King Edward",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1721 29 Avenue Southwest",
+      "addressLocality": "Calgary",
+      "postalCode": "T2T 6T7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46362",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running Piece
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Running Piece",
+  "startDate": "2019-10-25T21:30",
+  "endDate": "2019-10-25T23:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46363",
+    "price": "40",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fluid Fest at the Central Library
+------
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Fluid Fest at the Central Library",
+  "startDate": "2019-10-26T12:00",
+  "endDate": "2019-10-26T16:00",
+  "location": {
+    "@type": "Place",
+    "name": "Calgary Public Library",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "800 3 Street Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0E7",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/46403",
+    "price": "FREE",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "Various Artists"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
