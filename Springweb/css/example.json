@@ -1,0 +1,655 @@
+<script type="application/ld+json">
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-08T09:00",
+    "endDate": "2016-09-08T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@type": "Place",
+      "@id": "http://www.university.com/homepage-url",
+      "name": "ABC University",
+      "sameAs": "https://en.wikipedia.org/wiki/university-page",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Anytown Street",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "00000"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.761293",
+        "longitude": "-73.982294"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@type": "Person",
+      "@id": "http://example.com/instructor-profile-page",
+      "name": "Instructor Name",
+      "sameAs": "https://linkedin.com/profile-page"
+    }
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-09T09:00",
+    "endDate": "2016-09-09T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@id": "http://www.university.com/homepage-url"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@id": "http://example.com/instructor-profile-page"
+    }
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-10T09:00",
+    "endDate": "2016-09-10T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@id": "http://www.university.com/homepage-url"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@id": "http://example.com/instructor-profile-page"
+    }
+  }
+]
+</script>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-08T09:00",
+    "endDate": "2016-09-08T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@type": "Place",
+      "@id": "http://www.university.com/homepage-url",
+      "name": "ABC University",
+      "sameAs": "https://en.wikipedia.org/wiki/university-page",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1 Anytown Street",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "00000"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.761293",
+        "longitude": "-73.982294"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@type": "Person",
+      "@id": "http://example.com/instructor-profile-page",
+      "name": "Instructor Name",
+      "sameAs": "https://linkedin.com/profile-page"
+    }
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-09T09:00",
+    "endDate": "2016-09-09T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@id": "http://www.university.com/homepage-url"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@id": "http://example.com/instructor-profile-page"
+    }
+  },
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationEvent",
+    "name": "Leed Exam Prep",
+    "startDate": "2016-09-10T09:00",
+    "endDate": "2016-09-10T12:00",
+    "duration": "PT3H",
+    "url": "http://example.com/event-page-url",
+    "image": "http://example.com/event-image.jpg",
+    "description": "A short description about the event.",
+    "location": {
+      "@id": "http://www.university.com/homepage-url"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "http://schema.org/InStock",
+      "category": "Primary",
+      "url": "http://example.com/buy-tickets-page"
+    },
+    "performer": {
+      "@id": "http://example.com/instructor-profile-page"
+    }
+  }
+]
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "XooCon 2018",
+  "url": "https://xoocode.com/xoocon-2018/",
+  "sameAs": "https://wikipedia.org/Event/XooCon2018/",
+  "description": "Come together for the coding even of the year at XooCon 2018!",
+  "alternateName": "Xoo Code Convention 2018",
+  "image": "https://xoocode.com/images/xoocode-1018-promo-image-front.jpg",
+  "location": {
+    "@id": "https://xoocode.com#thunderdome",
+    "@type": "Place",
+    "name": "Kopenhagen Thunderdome",
+    "url": "https://thunderdome.dk/",
+    "address": "Thunderdome vej 12"
+  },
+  "maximumAttendeeCapacity": "3000",
+  "remainingAttendeeCapacity": "512",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Xoo Code Inc.",
+    "url": "https://xoocode.com"
+  },
+  "offers": [
+    {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket",
+      "name": "XooCon Day Pass",
+      "availability": "In Stock",
+      "price": "995",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    {
+      "name": "XooCon Full Pass",
+      "availability": "In Stock",
+      "price": "1495",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-full-pass-ticket"
+    },
+    {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket",
+      "name": "Tour Year Pass",
+      "availability": "In Stock",
+      "price": "595",
+      "priceCurrency": "EUR",
+      "validFrom": "2018-01-04",
+      "url": "http://internationalcodetour.com/shop/year-pass"
+    }
+  ],
+  "identifier": "XC-ID-2018",
+  "potentialAction": "Participation",
+  "typicalAgeRange": "24-40",
+  "subjectOf": "https://youtube.com/XooCon2018-promo-video/",
+  "about": "Programming Code",
+  "attendee": [
+    {
+      "@id": "https://xoocode.com#attendee-github",
+      "@type": "Organization",
+      "name": "GitHub Inc."
+    },
+    {
+      "@id": "https://xoocode.com#attendee-safra-cruz",
+      "@type": "Person",
+      "name": "Safra Catz",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Oracle Inc."
+      }
+    }
+  ],
+  "audience": {
+    "audienceType": "Programmers",
+    "geographicArea": {
+      "@type": "AdministrativeArea",
+      "address": "Denmark"
+    }
+  },
+  "contributor": [
+    {
+      "@id": "https://xoocode.com#xoo-partner1",
+      "@type": "Organization",
+      "name": "Xoo Parnter 1"
+    },
+    {
+      "@type": "Organization",
+      "name": "Xoo Parnter 2"
+    }
+  ],
+  "performer": {
+    "@id": "https://xoocode.com#attendee-safra-cruz"
+  },
+  "workFeatured": "Schema Examples 2018",
+  "startDate": "2018-04-20",
+  "endDate": "2018-04-21",
+  "doorTime": "2018-04-20T10:00:00",
+  "duration": "D2",
+  "eventStatus": "Rescheduled",
+  "previousStartDate": "2018-03-10",
+  "funder": {
+    "@id": "https://xoocode.com#funder-microsoft-global",
+    "@type": "Organization",
+    "name": "Microsoft Global"
+  },
+  "inLanguage": "Danish",
+  "isAccessibleForFree": "True",
+  "subEvent": {
+    "@type": "Event",
+    "name": "Schema Coder of the Year 2018",
+    "description": "Award ceremony honoring the most prominent markup coder of the year 2018",
+    "url": "https://xoocode.com/events/scy2018/",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/scy-2018.jpg"
+  },
+  "superEvent": {
+    "@type": "Event",
+    "name": "Code Tour 2018",
+    "description": "The official grand coding tour for the year 2018 kicks off in January and tours 14 locations throughout the year!",
+    "url": "http://internationalcodetour.com",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-01-04",
+    "endDate": "2018-12-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/code-tour-main-image-2018.jpg"
+  },
+  "translator": {
+    "@type": "Organization",
+    "name": "Intl. Translator Services Inc.",
+    "url": "http://itsi.com"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "XooCon 2018",
+  "url": "https://xoocode.com/xoocon-2018/",
+  "sameAs": "https://wikipedia.org/Event/XooCon2018/",
+  "description": "Come together for the coding even of the year at XooCon 2018!",
+  "alternateName": "Xoo Code Convention 2018",
+  "image": "https://xoocode.com/images/xoocode-1018-promo-image-front.jpg",
+  "location": {
+    "@id": "https://xoocode.com#thunderdome",
+    "@type": "Place",
+    "name": "Kopenhagen Thunderdome",
+    "url": "https://thunderdome.dk/",
+    "address": "Thunderdome vej 12"
+  },
+  "maximumAttendeeCapacity": "3000",
+  "remainingAttendeeCapacity": "512",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Xoo Code Inc.",
+    "url": "https://xoocode.com"
+  },
+  "offers": [
+    {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket",
+      "name": "XooCon Day Pass",
+      "availability": "In Stock",
+      "price": "995",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    {
+      "name": "XooCon Full Pass",
+      "availability": "In Stock",
+      "price": "1495",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-full-pass-ticket"
+    },
+    {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket",
+      "name": "Tour Year Pass",
+      "availability": "In Stock",
+      "price": "595",
+      "priceCurrency": "EUR",
+      "validFrom": "2018-01-04",
+      "url": "http://internationalcodetour.com/shop/year-pass"
+    }
+  ],
+  "identifier": "XC-ID-2018",
+  "potentialAction": "Participation",
+  "typicalAgeRange": "24-40",
+  "subjectOf": "https://youtube.com/XooCon2018-promo-video/",
+  "about": "Programming Code",
+  "attendee": [
+    {
+      "@id": "https://xoocode.com#attendee-github",
+      "@type": "Organization",
+      "name": "GitHub Inc."
+    },
+    {
+      "@id": "https://xoocode.com#attendee-safra-cruz",
+      "@type": "Person",
+      "name": "Safra Catz",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Oracle Inc."
+      }
+    }
+  ],
+  "audience": {
+    "audienceType": "Programmers",
+    "geographicArea": {
+      "@type": "AdministrativeArea",
+      "address": "Denmark"
+    }
+  },
+  "contributor": [
+    {
+      "@id": "https://xoocode.com#xoo-partner1",
+      "@type": "Organization",
+      "name": "Xoo Parnter 1"
+    },
+    {
+      "@type": "Organization",
+      "name": "Xoo Parnter 2"
+    }
+  ],
+  "performer": {
+    "@id": "https://xoocode.com#attendee-safra-cruz"
+  },
+  "workFeatured": "Schema Examples 2018",
+  "startDate": "2018-04-20",
+  "endDate": "2018-04-21",
+  "doorTime": "2018-04-20T10:00:00",
+  "duration": "D2",
+  "eventStatus": "Rescheduled",
+  "previousStartDate": "2018-03-10",
+  "funder": {
+    "@id": "https://xoocode.com#funder-microsoft-global",
+    "@type": "Organization",
+    "name": "Microsoft Global"
+  },
+  "inLanguage": "Danish",
+  "isAccessibleForFree": "True",
+  "subEvent": {
+    "@type": "Event",
+    "name": "Schema Coder of the Year 2018",
+    "description": "Award ceremony honoring the most prominent markup coder of the year 2018",
+    "url": "https://xoocode.com/events/scy2018/",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/scy-2018.jpg"
+  },
+  "superEvent": {
+    "@type": "Event",
+    "name": "Code Tour 2018",
+    "description": "The official grand coding tour for the year 2018 kicks off in January and tours 14 locations throughout the year!",
+    "url": "http://internationalcodetour.com",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-01-04",
+    "endDate": "2018-12-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/code-tour-main-image-2018.jpg"
+  },
+  "translator": {
+    "@type": "Organization",
+    "name": "Intl. Translator Services Inc.",
+    "url": "http://itsi.com"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "XooCon 2018",
+  "url": "https://xoocode.com/xoocon-2018/",
+  "sameAs": "https://wikipedia.org/Event/XooCon2018/",
+  "description": "Come together for the coding even of the year at XooCon 2018!",
+  "alternateName": "Xoo Code Convention 2018",
+  "image": "https://xoocode.com/images/xoocode-1018-promo-image-front.jpg",
+  "location": {
+    "@id": "https://xoocode.com#thunderdome",
+    "@type": "Place",
+    "name": "Kopenhagen Thunderdome",
+    "url": "https://thunderdome.dk/",
+    "address": "Thunderdome vej 12"
+  },
+  "maximumAttendeeCapacity": "3000",
+  "remainingAttendeeCapacity": "512",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Xoo Code Inc.",
+    "url": "https://xoocode.com"
+  },
+  "offers": [
+    {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket",
+      "name": "XooCon Day Pass",
+      "availability": "In Stock",
+      "price": "995",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    {
+      "name": "XooCon Full Pass",
+      "availability": "In Stock",
+      "price": "1495",
+      "priceCurrency": "DKK",
+      "validFrom": "2018-04-20",
+      "url": "https://xoocode.com/shop/events/xoocon-2018-full-pass-ticket"
+    },
+    {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket",
+      "name": "Tour Year Pass",
+      "availability": "In Stock",
+      "price": "595",
+      "priceCurrency": "EUR",
+      "validFrom": "2018-01-04",
+      "url": "http://internationalcodetour.com/shop/year-pass"
+    }
+  ],
+  "identifier": "XC-ID-2018",
+  "potentialAction": "Participation",
+  "typicalAgeRange": "24-40",
+  "subjectOf": "https://youtube.com/XooCon2018-promo-video/",
+  "about": "Programming Code",
+  "attendee": [
+    {
+      "@id": "https://xoocode.com#attendee-github",
+      "@type": "Organization",
+      "name": "GitHub Inc."
+    },
+    {
+      "@id": "https://xoocode.com#attendee-safra-cruz",
+      "@type": "Person",
+      "name": "Safra Catz",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Oracle Inc."
+      }
+    }
+  ],
+  "audience": {
+    "audienceType": "Programmers",
+    "geographicArea": {
+      "@type": "AdministrativeArea",
+      "address": "Denmark"
+    }
+  },
+  "contributor": [
+    {
+      "@id": "https://xoocode.com#xoo-partner1",
+      "@type": "Organization",
+      "name": "Xoo Parnter 1"
+    },
+    {
+      "@type": "Organization",
+      "name": "Xoo Parnter 2"
+    }
+  ],
+  "performer": {
+    "@id": "https://xoocode.com#attendee-safra-cruz"
+  },
+  "workFeatured": "Schema Examples 2018",
+  "startDate": "2018-04-20",
+  "endDate": "2018-04-21",
+  "doorTime": "2018-04-20T10:00:00",
+  "duration": "D2",
+  "eventStatus": "Rescheduled",
+  "previousStartDate": "2018-03-10",
+  "funder": {
+    "@id": "https://xoocode.com#funder-microsoft-global",
+    "@type": "Organization",
+    "name": "Microsoft Global"
+  },
+  "inLanguage": "Danish",
+  "isAccessibleForFree": "True",
+  "subEvent": {
+    "@type": "Event",
+    "name": "Schema Coder of the Year 2018",
+    "description": "Award ceremony honoring the most prominent markup coder of the year 2018",
+    "url": "https://xoocode.com/events/scy2018/",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/xoocon-2018-single-day-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/scy-2018.jpg"
+  },
+  "superEvent": {
+    "@type": "Event",
+    "name": "Code Tour 2018",
+    "description": "The official grand coding tour for the year 2018 kicks off in January and tours 14 locations throughout the year!",
+    "url": "http://internationalcodetour.com",
+    "location": {
+      "@id": "https://xoocode.com#thunderdome"
+    },
+    "startDate": "2018-01-04",
+    "endDate": "2018-12-20",
+    "offers": {
+      "@id": "https://xoocode.com/shop/events/ict-year-ticket"
+    },
+    "performer": {
+      "@id": "https://xoocode.com#funder-microsoft-global"
+    },
+    "image": "https://xoocode.com/images/code-tour-main-image-2018.jpg"
+  },
+  "translator": {
+    "@type": "Organization",
+    "name": "Intl. Translator Services Inc.",
+    "url": "http://itsi.com"
+  }
+}
+</script>

@@ -1,5 +1,7 @@
-SADONNA
-------
+
+
+<script type="application/ld+json">
+[
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -19,15 +21,13 @@ SADONNA
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567062271187-4EJ76FNE2WW0RHVZ0LGB/MIGUELGUTIERREZ_showimage%28PERFORMANCE%29.jpg?format=500w&content-type=image%2Fjpeg"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "SADONNA is exactly what it sounds like: sad versions of Madonna songs.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46321",
-    "price": "10-25",
+    "price": "25",
     "priceCurrency": "cad",
     "availability": "https://schema.org/InStock",
     "validFrom": "2019-09-04T23:00"
@@ -36,30 +36,7 @@ SADONNA
     "@type": "PerformingGroup",
     "name": "Miguel Gutierrez"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-GENDER DEFIANCE! CABARET
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -79,11 +56,9 @@ GENDER DEFIANCE! CABARET
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567112526792-D7BGEHEU10ZFFAKRG6YI/gendersplendor.png?format=500w&content-type=image%2Fpng"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "A night of gender defying grace and debauchery by and for gender diverse artists and performers. In partnership with Fluid Festival; join Oliver Twirl and their fellow trans and non-binary aliens as they dance through the gender spectrum performing spectacles and feats that will Wow you and make you feel things you thought you couldn't.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46322",
@@ -96,28 +71,7 @@ GENDER DEFIANCE! CABARET
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Beauty of Falling Apart | The Other Half
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -137,11 +91,9 @@ The Beauty of Falling Apart | The Other Half
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
-   ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+    "https://images.squarespace-cdn.com/content/v1/521b828be4b0152816dfb8f8/1567295841353-SWM8BEY4B5WWWQBIJ63W/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0topjEaZcWjtmMYdCWL4dkGbxs35J-ZjFa9s1e3LsxrX8g4qcOj2k2AL08mW_Htcgg/Website_square_imagesBeauty_other.png"
+  ],
+  "description": "A double bill featuring evocative and uncanny expressions of the female voice in duet form.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/45749",
@@ -152,41 +104,44 @@ The Beauty of Falling Apart | The Other Half
   },
   "performer": {
     "@type": "PerformingGroup",
-    "name": "Various Artists"
+    "name": "ACTION AT A DISTANCE, HILDE ELBERS &amp; HEATHER WARE"
+  },
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The Beauty of Falling Apart | The Other Half",
+  "startDate": "2019-10-17T20:00",
+  "endDate": "2019-10-17T21:00",
+  "location": {
+    "@type": "Place",
+    "name": "DJD Dance Centre",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111 12 Avenue Southeast",
+      "addressLocality": "Calgary",
+      "postalCode": "T2G 0Z9",
+      "addressRegion": "Ab",
+      "addressCountry": "Canada"
+    }
+  },
+  "image": [
+    "https://images.squarespace-cdn.com/content/v1/521b828be4b0152816dfb8f8/1567295841353-SWM8BEY4B5WWWQBIJ63W/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0topjEaZcWjtmMYdCWL4dkGbxs35J-ZjFa9s1e3LsxrX8g4qcOj2k2AL08mW_Htcgg/Website_square_imagesBeauty_other.png"
+  ],
+  "description": "A double bill featuring evocative and uncanny expressions of the female voice in duet form.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://fluidfest.simpletix.com/e/45749",
+    "price": "30",
+    "priceCurrency": "cad",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2019-09-04T23:00"
+  },
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": "ACTION AT A DISTANCE, HILDE ELBERS &amp; HEATHER WARE"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-RedRover Tour: Road Trip | I AM A GENIUS does anyone here know me?
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -206,9 +161,7 @@ RedRover Tour: Road Trip | I AM A GENIUS does anyone here know me?
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061869448-BC6Z8HLLUG4QU56D2PB3/RoadTrip_web.png?format=500w&content-type=image%2Fpng"
    ],
   "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
   "offers": {
@@ -223,33 +176,7 @@ RedRover Tour: Road Trip | I AM A GENIUS does anyone here know me?
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-HINKYPUNK
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -269,11 +196,9 @@ HINKYPUNK
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1567061868481-5SO274X8F9OST87A0737/HINKYPUNK_web.png?format=500w&content-type=image%2Fpng"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "HINKYPUNK is an unidentified identity – an archetype, a hero, the unreachable. HINKYPUNK is the idolized/idealized version of the self, a distant mirage of the here and now. HINKYPUNK is the most real that real can get. HINKYPUNK is the glamorous façade leading the construction of cultural identity. HINKYPUNK is the faceless face we look for and who shapes what we become.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46324",
@@ -286,36 +211,7 @@ HINKYPUNK
     "@type": "PerformingGroup",
     "name": "Ralph Escamillan (Vancouver)"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fluid Kiki Ball
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -335,15 +231,13 @@ Fluid Kiki Ball
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677b01390a160001c26a7a/1567062788130/Fluidkikiball.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "Celebrate the Vogue/Ballroom culture with Fluid Festival this year at the first Fluid Kiki Vogue Ball. In collaboration with Ralph Escamillan, VogueYYC and co presented Calgary Queer Arts Society and Fake Mustache Drag King Troupe.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46649",
-    "price": "10",
+    "price": "15",
     "priceCurrency": "cad",
     "availability": "https://schema.org/InStock",
     "validFrom": "2019-09-04T23:00"
@@ -352,38 +246,8 @@ Fluid Kiki Ball
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
+},
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-To Name An Other
-------
-{
-  "@context": "https://schema.org",
   "@type": "Event",
   "name": "To Name An Other",
   "startDate": "2019-10-19T15:00",
@@ -401,53 +265,15 @@ To Name An Other
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677770a79b5800013817a2/1567698033828/TonameanOther.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://fluidfest.simpletix.com/e/46325",
-    "price": "FREE",
-    "priceCurrency": "cad",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2019-09-04T23:00"
-  },
+  "description": "In this special performance, as part of Jeffrey Gibson’s exhibition Time Carriers at Esker Foundation, fifty performers will be brought together for a drumming event to give names to our current political climate.",
+  "isAccessibleForFree": true,
   "performer": {
     "@type": "PerformingGroup",
     "name": "Jeffrey Gibson (New York)"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Split
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -467,11 +293,9 @@ Split
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d67776dcdd58a0001189635/1567061872873/Split_web.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "Revelling in Lucy Guerin’s sharp, elegant choreographic investigations, Split reflects the dilemmas of negotiating with oneself and others in a world of increased pressure and reduced resources.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46326",
@@ -484,36 +308,7 @@ Split
     "@type": "PerformingGroup",
     "name": "Lucy Guerin (Australia)"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Space Where You Dream & I Live | oblivion 
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -533,11 +328,9 @@ The Space Where You Dream & I Live | oblivion
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d6b12e0f0b2850001f65d67/1567298309006/Website_square_imagesyour-dream.png"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "A double bill featuring two cellular investigations of wildness and flow in the body-mind world.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46327",
@@ -548,32 +341,9 @@ The Space Where You Dream & I Live | oblivion
   },
   "performer": {
     "@type": "PerformingGroup",
-    "name": "Various Artists"
+    "name": "Su Lin Tseng, Mari Osanai"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Pour
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -593,9 +363,7 @@ Pour
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677fb696fe220001f437ce/1567063992867/Pour.png?format=1000w"
    ],
   "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
   "offers": {
@@ -610,37 +378,7 @@ Pour
     "@type": "PerformingGroup",
     "name": "Daina Ashbee (Montreal)"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Talking Truths: Performance
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -660,10 +398,8 @@ Talking Truths: Performance
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
-   ],
+    "https://images.squarespace-cdn.com/content/521b828be4b0152816dfb8f8/1568136125116-Q5FOE5JCITHYEWNNBDIX/talkingtruths_performance_zoom_web.png?format=1000w&content-type=image%2Fpng"
+  ],
   "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
   "offers": {
     "@type": "Offer",
@@ -678,33 +414,6 @@ Talking Truths: Performance
     "name": "Various Artists"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Talking Truths: Community connections through Indigenous Dance
-------
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -724,49 +433,15 @@ Talking Truths: Community connections through Indigenous Dance
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677fb8bfbbfb0001e6b337/1567064001432/TalkingTruths.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://fluidfest.simpletix.com/e/46650",
-    "price": "FREE",
-    "priceCurrency": "cad",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2019-09-04T23:00"
-  },
+  "description": "A gathering centering the indigenous female creative voice. Everyone is invited to listen and participate.",
+  "isAccessibleForFree": true,
   "performer": {
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Physical Therapy Cabaret
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -786,11 +461,9 @@ Physical Therapy Cabaret
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677fb6cdd58a000118c1bb/1567063991366/Physicaltherapy.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "Gloriously bound by a small space and unlimited imagination, the Physical Therapy Cabaret invites Calgary artists and national guests to share whimsical and irreverent performance.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46361",
@@ -803,35 +476,7 @@ Physical Therapy Cabaret
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-thaw | Extended Body | No More Fantasies 
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -851,11 +496,9 @@ thaw | Extended Body | No More Fantasies
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/t/5d6b1472e543ab0001ef1a38/1567298687865/Website_square_imagesthaw.png"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "The edges of identity and body mobility are explored and unraveled in this triple bill of embodied narratives.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46362",
@@ -868,34 +511,7 @@ thaw | Extended Body | No More Fantasies
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Running Piece
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -915,11 +531,9 @@ Running Piece
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677fb67f8b02000145de81/1567063994280/RunningPiece.png?format=1000w"
    ],
-  "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
+  "description": "Running Piece is a work for dancer and treadmill. On this confined yet infinite space, a man travels without leaving, constantly forced to go forward.",
   "offers": {
     "@type": "Offer",
     "url": "https://fluidfest.simpletix.com/e/46363",
@@ -932,35 +546,7 @@ Running Piece
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fluid Fest at the Central Library
-------
+},
 {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -980,47 +566,27 @@ Fluid Fest at the Central Library
     }
   },
   "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
+    "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d677fc0a79b58000138461d/1567064006682/Library.png?format=1000w"
    ],
   "description": "If we have a SHORT blurb in the artist contract file put it here. Seriously, one sentance.",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://fluidfest.simpletix.com/e/46403",
-    "price": "FREE",
-    "priceCurrency": "cad",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2019-09-04T23:00"
-  },
+  "isAccessibleForFree": true,
   "performer": {
     "@type": "PerformingGroup",
     "name": "Various Artists"
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+},
+"superEvent": {
+    "@type": "Event",
+    "name": "Fluid Fest 2019",
+    "description": "The official grand coding tour for the year 2018 kicks off in January and tours 14 locations throughout the year!",
+    "url": "http://springboardperformance.com/fluidfest",
+    "startDate": "2019-10-15",
+    "endDate": "2018-10-27",
+    "offers": {
+      "@id": "https://fluidfest.simpletix.com"
+    },
+    "image": "https://static1.squarespace.com/static/521b828be4b0152816dfb8f8/5d655b0b3cca420001ac3f31/5d71b591a8d8b00001b24955/1567733160204/FF2019+Lauch_square.png?format=1000w"
+  }
+  
+]
+</script>

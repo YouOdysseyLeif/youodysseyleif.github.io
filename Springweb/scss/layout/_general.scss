@@ -1,0 +1,17 @@
+@import "fluidstyle";
+
+[id^="ff2019"] {
+  @extend %fluidfeststyle;
+  background-color: $white;
+  .sqs-block-image .image-block-outer-wrapper.image-block-v2 .image-overlay {
+    background: #0ba2a8;
+    mix-blend-mode: color;
+  }
+  .sqs-block-image .design-layout-collage .image-card {
+    background-color: $fluid-prime-orange;
+    p,
+    strong {
+      color: $fluid-teal-text;
+    }
+  }
+}

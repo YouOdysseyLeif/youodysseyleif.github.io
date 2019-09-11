@@ -3,112 +3,11 @@
 @import "global/variables";
 @import "modules/mixins";
 @import "global/buttons";
+@import "layout/general";
 @import "layout/week1";
 @import "layout/week2";
 @import "layout/landing";
 @import "layout/utility";
-
-/* general */
-
-%fluidfeststyle {
-  .Index-page-image:before {
-    background-color: var(--nobackground);
-  }
-  *,
-  p {
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: $basetext;
-  }
-  strong,
-  b {
-    font-family: $font-bold;
-    font-weight: normal;
-    font-style: normal;
-    font-size: $basetext;
-  }
-  em,
-  i {
-    font-family: futura-pt;
-    font-weight: 400;
-    font-style: italic;
-  }
-  %headerfont {
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
-    @media screen and (max-width: $phone) {
-      font-size-adjust: 0.7rem;
-    }
-  }
-  h1 {
-    font-family: $font-heavy;
-    @extend %headerfont;
-    font-size: $t-largest;
-    line-height: $leading-tight;
-    font-kerning: auto;
-    letter-spacing: normal;
-    color: $fluid-teal-text;
-    b {
-      color: $fluid-prime-orange;
-    }
-  }
-  h2 {
-    font-family: $font-bold;
-    @extend %headerfont;
-    color: $fluid-teal-text;
-    font-size: $t-larger;
-  }
-  h3 {
-    font-family: $font-heavy;
-    @extend %headerfont;
-    color: $fluid-secondary-dark;
-    font-size: $t-large;
-    font-kerning: auto;
-    letter-spacing: normal;
-  }
-
-  a {
-    text-decoration: none;
-    color: $c-link;
-    &:hover {
-      color: $c-link-hover;
-      transition: $transition-color;
-    }
-  }
-  .sqs-block-button-element--small.sqs-block-button-element,
-  .sqs-editable-button,
-  .lightbox-handle.sqs-system-button.sqs-editable-button {
-    //todo
-    @extend %allbuttons;
-    @extend %tealbuttons;
-  }
-
-  .sqs-block-button-element--medium.sqs-block-button-element {
-    @extend %allbuttons;
-    @extend %orangebuttons;
-    padding: 8px 12px 10px;
-    margin: 7px;
-    font-size: 1.2rem;
-  }
-}
-
-[id^="ff2019"] {
-  @extend %fluidfeststyle;
-  background-color: $white;
-  .sqs-block-image .image-block-outer-wrapper.image-block-v2 .image-overlay {
-    background: #0ba2a8;
-    mix-blend-mode: color;
-  }
-  .sqs-block-image .design-layout-collage .image-card {
-    background-color: $fluid-prime-orange;
-    p,
-    strong {
-      color: $fluid-teal-text;
-    }
-  }
-}
 
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
