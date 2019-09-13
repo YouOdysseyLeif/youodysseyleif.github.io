@@ -30,11 +30,11 @@
   font-style: normal;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element,
-[id^="ff2019-week2-banner"] .sqs-editable-button,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button, [id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element,
+[id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element,
 [id^="ff2019"] .sqs-editable-button,
-[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element {
+[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element,
+[id^="ff2019-week2-banner"] .sqs-editable-button,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button {
   border-radius: 4px;
   border: 0px;
   -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
@@ -49,50 +49,50 @@
   transition: all 0.1s 0s ease-out;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:hover,
-[id^="ff2019-week2-banner"] .sqs-editable-button:hover,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:hover, [id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:hover,
+[id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:hover,
 [id^="ff2019"] .sqs-editable-button:hover,
-[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:hover, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:hover, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:focus,
-[id^="ff2019-week2-banner"] .sqs-editable-button:focus,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus, [id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:focus,
+[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:hover, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:hover, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:hover,
+[id^="ff2019-week2-banner"] .sqs-editable-button:hover,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:hover, [id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:focus,
 [id^="ff2019"] .sqs-editable-button:focus,
-[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:focus {
+[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:focus, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:focus,
+[id^="ff2019-week2-banner"] .sqs-editable-button:focus,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
   -webkit-transition: all 0.25s 0s ease-out;
   transition: all 0.25s 0s ease-out;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:active,
-[id^="ff2019-week2-banner"] .sqs-editable-button:active,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:active, [id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:active,
+[id^="ff2019"] .sqs-block-button-element--small.sqs-block-button-element:active,
 [id^="ff2019"] .sqs-editable-button:active,
-[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:active, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:active {
+[id^="ff2019"] .lightbox-handle.sqs-system-button.sqs-editable-button:active, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:active, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:active,
+[id^="ff2019-week2-banner"] .sqs-editable-button:active,
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:active {
   -webkit-transform: translate3d(0, 2px, 0);
           transform: translate3d(0, 2px, 0);
   -webkit-transition: all 0.025s 0s ease-out;
   transition: all 0.025s 0s ease-out;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element,
+[id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element,
 [id^="ff2019-week2-banner"] .sqs-editable-button,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element {
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button {
   background: #e17828;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:focus,
+[id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:focus, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:focus,
 [id^="ff2019-week2-banner"] .sqs-editable-button:focus,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:focus {
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:focus {
   background: #e4863e;
   -webkit-box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
           box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   color: #fdcb96;
 }
 
-[id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:active,
+[id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:active, [id^="ff2019-week2-banner"] .sqs-block-button-element--small.sqs-block-button-element:active,
 [id^="ff2019-week2-banner"] .sqs-editable-button:active,
-[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:active, [id^="ff2019"] .sqs-block-button-element--medium.sqs-block-button-element:active {
+[id^="ff2019-week2-banner"] .lightbox-handle.sqs-system-button.sqs-editable-button:active {
   background: #d26c1d;
   -webkit-box-shadow: 0 1px 0px 0 rgba(225, 120, 40, 0.25);
           box-shadow: 0 1px 0px 0 rgba(225, 120, 40, 0.25);
@@ -121,89 +121,6 @@
           box-shadow: 0 1px 0px 0 rgba(11, 162, 168, 0.25);
 }
 
-[id^="ff2019-week1"] p {
-  color: #104e52;
-}
-
-[id^="ff2019-week1-banner"] {
-  background-color: #e17828;
-  height: 50vh;
-}
-
-[id^="ff2019-week1-banner"] h1,
-[id^="ff2019-week1-banner"] h2 {
-  color: #0ba2a8;
-}
-
-[id^="ff2019-week1-banner"] p {
-  color: #104e52;
-}
-
-[id^="ff2019-week2"] p {
-  color: #351c0a;
-}
-
-[id^="ff2019-week2-banner"] {
-  background-color: #0ba2a8;
-  height: 50vh;
-}
-
-[id^="ff2019-festivbanner"] {
-  background-color: #0ba2a8;
-}
-
-[id^="ff2019-festivbanner"] h1,
-[id^="ff2019-festivbanner"] h2,
-[id^="ff2019-festivbanner"] h3 {
-  color: #fdcb96;
-}
-
-[id^="ff2019-festivbanner"] p {
-  color: #104e52;
-}
-
-@media screen and (max-width: 768px) {
-  [id^="ff2019-festivbanner"] figure.Index-page-image.loaded {
-    display: none !important;
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/*                     For specific fixes and ID selectors                    */
-/* -------------------------------------------------------------------------- */
-/* -------------------- //hide horizontal image on mobile ------------------- */
-@media screen and (max-width: 768px) {
-  #block-yui_3_17_2_1_1565335709531_4810,
-  #block-fb5b86e1fa5264ec10cd,
-  #block-yui_3_17_2_1_1567050902431_20644,
-  #block-yui_3_17_2_1_1567058413576_4682 {
-    display: none !important;
-  }
-}
-
-/* -------------------- //hide verticle image on desktop -------------------- */
-@media screen and (min-width: 769px) {
-  #block-yui_3_17_2_1_1565153504851_4966,
-  #block-ebb42e46870ff0825577 {
-    display: none !important;
-  }
-}
-
-/* -------------- // widen the code black on the festival page -------------- */
-#block-yui_3_17_2_1_1565256639647_8158 {
-  width: auto;
-}
-
-/* ----------------- // hide the hr line on fluid main page ----------------- */
-#block-yui_3_17_2_1_1567050902431_6133 {
-  display: none;
-}
-
-/*
-#block-yui_3_17_2_1_1567050902431_20644 .thumb-image.loaded {
-
-}
-*/
 /* general */
 [id^="ff2019"] .Index-page-image:before {
   background-color: var(--nobackground);
@@ -308,6 +225,89 @@
   color: #104e52;
 }
 
+[id^="ff2019-week1"] p {
+  color: #104e52;
+}
+
+[id^="ff2019-week1-banner"] {
+  background-color: #e17828;
+  height: 50vh;
+}
+
+[id^="ff2019-week1-banner"] h1,
+[id^="ff2019-week1-banner"] h2 {
+  color: #0ba2a8;
+}
+
+[id^="ff2019-week1-banner"] p {
+  color: #104e52;
+}
+
+[id^="ff2019-week2"] p {
+  color: #351c0a;
+}
+
+[id^="ff2019-week2-banner"] {
+  background-color: #0ba2a8;
+  height: 50vh;
+}
+
+[id^="ff2019-festivbanner"] {
+  background-color: #0ba2a8;
+}
+
+[id^="ff2019-festivbanner"] h1,
+[id^="ff2019-festivbanner"] h2,
+[id^="ff2019-festivbanner"] h3 {
+  color: #fdcb96;
+}
+
+[id^="ff2019-festivbanner"] p {
+  color: #104e52;
+}
+
+@media screen and (max-width: 768px) {
+  [id^="ff2019-festivbanner"] figure.Index-page-image.loaded {
+    display: none !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                     For specific fixes and ID selectors                    */
+/* -------------------------------------------------------------------------- */
+/* -------------------- //hide horizontal image on mobile ------------------- */
+@media screen and (max-width: 768px) {
+  #block-yui_3_17_2_1_1565335709531_4810,
+  #block-fb5b86e1fa5264ec10cd,
+  #block-yui_3_17_2_1_1567050902431_20644,
+  #block-yui_3_17_2_1_1567058413576_4682 {
+    display: none !important;
+  }
+}
+
+/* -------------------- //hide verticle image on desktop -------------------- */
+@media screen and (min-width: 769px) {
+  #block-yui_3_17_2_1_1565153504851_4966,
+  #block-ebb42e46870ff0825577 {
+    display: none !important;
+  }
+}
+
+/* -------------- // widen the code black on the festival page -------------- */
+#block-yui_3_17_2_1_1565256639647_8158 {
+  width: auto;
+}
+
+/* ----------------- // hide the hr line on fluid main page ----------------- */
+#block-yui_3_17_2_1_1567050902431_6133 {
+  display: none;
+}
+
+/*
+#block-yui_3_17_2_1_1567050902431_20644 .thumb-image.loaded {
+
+}
+*/
 /*
 .summary-item.summary-item-record-type-image.sqs-gallery-design-autogrid-slide {
     transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);

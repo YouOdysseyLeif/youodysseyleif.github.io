@@ -1,0 +1,23 @@
+Thu / Oct 3, 8:00PM - Sadonna
+Tue / Oct 15, 8:00PM - Gender Splendor: A Cabaret of Gender Exploration
+Wed / Oct 16, 8:00PM - The Other Half | The Beauty of Falling Apart
+Thu / Oct 17, 8:00PM - The Other Half | The Beauty of Falling Apart
+Fri / Oct 18, 7:30PM - RedRover: Road Trip | I AM A GENIUS does anyone here know me?
+Sat / Oct 19, 5:00PM - RedRover: Road Trip | I AM A GENIUS does anyone here know me?
+Fri / Oct 18, 8:00PM - HINKYPUNK
+Fri / Oct 18, 9:30PM - Fluid Kiki Ball
+Sat / Oct 19, 8:00PM - Split
+Tues / Oct 22, 7:30PM - The Space Where You Dream & I Live | oblivion 
+Wed / Oct 23, 8:00PM - Pour
+Thu / Oct 24, 8:00PM - Pour
+Wed / Oct 23, 7:30PM - Talking Truths: Performance
+Thu / Oct 24, 9:00PM - Physical Therapy Cabaret
+Sat / Oct 26, 9:00PM - Physical Therapy Cabaret
+Fri / Oct 25, 7:30PM - thaw | Extended Body | No More Fantasies 
+Sat / Oct 26, 7:30PM - thaw | Extended Body | No More Fantasies
+Fri / Oct 25, 8:00PM - Running Piece
+Sat / Oct 26, 8:00PM - Running Piece
+
+
+old webhook
+http://webhooks.simpletix.com/ClientWebhooks/fluidfest/BundleDeal.aspx
