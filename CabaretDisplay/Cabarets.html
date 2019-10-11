@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cabaret</title>
+  </head>
+  <body>
+    <div
+      class="showcontainer"
+      sheetsu="https://sheetsu.com/apis/v1.0su/211385bf537f"
+    >
+      <input type="radio" name="tabs" id="{{ CabID }}" checked="checked" />
+      <label class="showname" for="{{ CabID }}">{{ Artists }}</label>
+      <article class="showdescription tab">
+        <h2>{{ Title }}</h2>
+        <section class="hideaway">
+          <div class="description">{{ Description }}</div>
+          <figure>
+            <img
+              src="{{ Photo }}"
+              alt="Photo of: {{ Title }} - Photo Credit: {{ Photo_Credit }}"
+            />
+            <figcaption>{{ Photo_Credit }}</figcaption>
+          </figure>
+          <div class="bio">{{ Bio }}</div>
+        </section>
+        <p></p>
+      </article>
+    </div>
+
+    <script src="//load.sheetsu.com"></script>
+  </body>
+</html>
