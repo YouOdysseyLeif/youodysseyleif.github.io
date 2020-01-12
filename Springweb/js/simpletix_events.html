@@ -1,0 +1,201 @@
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-KXMBKG2");
+  var ticketPrice = document
+    .querySelector("#mainPriceDiv > p.price.st_top_price_section_right_title")
+    .innerText.replace("$", "");
+  dataLayer.push({
+    ecommerce: {
+      detail: {
+        // 'detail' actions have an optional list property.
+        products: [
+          {
+            name: EventTitle, // Name or ID is required.
+            id: [EventId],
+            price: ticketPrice
+          }
+        ]
+      }
+    }
+  });
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-KXMBKG2"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Facebook Pixel Code -->
+<script>
+  !(function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
+  fbq("init", "1948466612096133");
+  fbq("track", "PageView");
+  var ticketPrice = document
+    .querySelector("#mainPriceDiv > p.price.st_top_price_section_right_title")
+    .innerText.replace("$", "");
+  fbq("track", "ViewContent", {
+    value: ticketPrice,
+    currency: "CAD"
+  });
+</script>
+<noscript
+  ><img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=1948466612096133&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ticketPrice = document
+      .querySelector("#mainPriceDiv > p.price.st_top_price_section_right_title")
+      .innerText.replace("$", "");
+    dataLayer.push({
+      ecommerce: {
+        detail: {
+          products: [{ name: EventTitle, id: [EventId], price: ticketPrice }]
+        }
+      }
+    });
+    document
+      .getElementById("#btnCheckout")
+      .addEventListener("click", function() {
+        var pShowId = document.querySelector("#ShowId").value;
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            currencyCode: "CAD",
+            add: {
+              // 'add' actionFieldObject measures.
+              products: [
+                {
+                  //  adding a product to a shopping cart.
+                  name: EventTitle,
+                  id: pShowId,
+                  price: ticketPrice,
+                  quantity: 1
+                }
+              ]
+            }
+          }
+        });
+      });
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-KXMBKG2");
+</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+  window.onload() {
+      var ticketPrice = document.querySelector("#mainPriceDiv > p.price.st_top_price_section_right_title").innerText.replace("$", "");
+      dataLayer.push({
+      'ecommerce': {
+          'detail': {
+          'products': [{
+              'name': EventTitle,
+              'id': [EventId],
+              'price': ticketPrice,
+          }]
+          }
+      }
+      });
+  }
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-KXMBKG2"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Facebook Pixel Code -->
+<script>
+  !(function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
+  fbq("init", "1948466612096133");
+  fbq("track", "PageView");
+  var ticketPrice = document
+    .querySelector("#mainPriceDiv > p.price.st_top_price_section_right_title")
+    .innerText.replace("$", "");
+  fbq("track", "ViewContent", {
+    value: ticketPrice,
+    currency: "CAD"
+  });
+</script>
+<noscript
+  ><img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=1948466612096133&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
